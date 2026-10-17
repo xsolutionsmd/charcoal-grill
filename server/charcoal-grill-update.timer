@@ -1,0 +1,11 @@
+[Unit]
+Description=Check charcoal-grill approved releases
+
+[Timer]
+OnBootSec=45s
+OnUnitInactiveSec=60s
+AccuracySec=5s
+Unit=charcoal-grill-update.service
+
+[Install]
+WantedBy=timers.target

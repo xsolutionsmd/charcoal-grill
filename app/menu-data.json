@@ -1,0 +1,257 @@
+{
+  "source": "https://www.chargrill.com/our-menu",
+  "observed": "2026-10-17",
+  "currency": "USD",
+  "categories": [
+    {
+      "name": "Pit sandwiches",
+      "items": [
+        {
+          "name": "Pit beef",
+          "price": "Regular 10.79 / Colossal 15.99",
+          "description": "Prepared to your preference"
+        },
+        {
+          "name": "Roma Italian sausage",
+          "price": "Regular 9.79 / Colossal 14.29",
+          "description": "Peppers and onions"
+        },
+        {
+          "name": "Ham",
+          "price": "Regular 10.19 / Colossal 14.59",
+          "description": "Barbecued ham"
+        },
+        {
+          "name": "Turkey",
+          "price": "Regular 10.19 / Colossal 15.59",
+          "description": "Smoked and grilled"
+        },
+        {
+          "name": "Chicken filet",
+          "price": "Regular 8.79 / Colossal 12.99",
+          "description": "Skinless chicken filet"
+        },
+        {
+          "name": "Chesapeake chicken",
+          "price": "Regular 8.79 / Colossal 12.99",
+          "description": "Old Bay, sourdough, mayo, lettuce and tomato"
+        },
+        {
+          "name": "Combo",
+          "price": "Regular 10.29 / Colossal 14.59",
+          "description": "Choose two: beef, ham or turkey"
+        },
+        {
+          "name": "Club sandwich",
+          "price": "9.69",
+          "description": "Ham, turkey, Swiss, bacon, sourdough"
+        },
+        {
+          "name": "Chicken cordon bleu",
+          "price": "9.59",
+          "description": "Chicken, ham, Swiss, mustard, sourdough"
+        },
+        {
+          "name": "Pulled chicken",
+          "price": "9.19",
+          "description": "Slow-cooked with Memphis barbecue sauce"
+        },
+        {
+          "name": "Pork BBQ",
+          "price": "9.19",
+          "description": "Slaw add-on available"
+        },
+        {
+          "name": "Chopped beef BBQ",
+          "price": "9.19",
+          "description": "Ground round and beef ends in sauce"
+        },
+        {
+          "name": "Grilled Angus beef dog",
+          "price": "3.59",
+          "description": "Choptop option 4.89"
+        }
+      ]
+    },
+    {
+      "name": "Fries and sides",
+      "items": [
+        {
+          "name": "Ocean Fries",
+          "price": "Junior 4.69 / Regular 5.89 / Jumbo 8.79 / Colossal 15.99",
+          "description": "Fresh-cut; cooked in peanut oil"
+        },
+        {
+          "name": "Red potato salad",
+          "price": "Half pint 4.99",
+          "description": ""
+        },
+        {
+          "name": "Cole slaw",
+          "price": "Half pint 3.49",
+          "description": ""
+        },
+        {
+          "name": "Macaroni salad",
+          "price": "Half pint 3.49",
+          "description": ""
+        },
+        {
+          "name": "Beans",
+          "price": "Half pint 3.49",
+          "description": ""
+        },
+        {
+          "name": "Apple sauce",
+          "price": "Small 2.99",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "Wings and ribs",
+      "items": [
+        {
+          "name": "Wings, boneless wings or buffalo shrimp",
+          "price": "10 pieces 15.99 / 20 pieces 29.99 / 30 pieces 44.99",
+          "description": "Celery and ranch or bleu cheese"
+        },
+        {
+          "name": "Half rack baby back ribs",
+          "price": "Regular 13.49 / Dinner 17.79",
+          "description": "Regular or hickory BBQ"
+        },
+        {
+          "name": "Full rack baby back ribs",
+          "price": "Regular 18.79 / Dinner 22.99",
+          "description": "Regular or hickory BBQ"
+        },
+        {
+          "name": "Half chicken",
+          "price": "Regular 14.39 / Dinner 18.79",
+          "description": ""
+        },
+        {
+          "name": "Half ribs and chicken dinner",
+          "price": "26.99",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "Salads and starters",
+      "items": [
+        {
+          "name": "Grilled chicken Caesar salad",
+          "price": "Small 12.99 / Large 16.99",
+          "description": ""
+        },
+        {
+          "name": "Side Caesar salad",
+          "price": "Small 3.49 / Large 5.99",
+          "description": "No chicken"
+        },
+        {
+          "name": "Chicken noodle soup",
+          "price": "Half pint 3.99 / Pint 6.99",
+          "description": ""
+        },
+        {
+          "name": "Shrimp and corn chowder",
+          "price": "Half pint 4.79",
+          "description": ""
+        },
+        {
+          "name": "Poppers",
+          "price": "6.99",
+          "description": "Popper jam"
+        },
+        {
+          "name": "Chicken tenders",
+          "price": "6.99",
+          "description": "Honey mustard or BBQ"
+        },
+        {
+          "name": "Onion rings",
+          "price": "5.99",
+          "description": ""
+        },
+        {
+          "name": "Mozzarella sticks",
+          "price": "6.99",
+          "description": ""
+        },
+        {
+          "name": "Fried pickles",
+          "price": "6.99",
+          "description": "Bistro sauce"
+        }
+      ]
+    },
+    {
+      "name": "Junior meals",
+      "items": [
+        {
+          "name": "Jr. beef, ham or turkey meal",
+          "price": "9.49",
+          "description": "Kiddie fries or apple sauce"
+        },
+        {
+          "name": "Hot dog meal",
+          "price": "8.49",
+          "description": "Kiddie fries or apple sauce"
+        },
+        {
+          "name": "Tender meal",
+          "price": "9.49",
+          "description": "Kiddie fries or apple sauce"
+        },
+        {
+          "name": "Jr. pulled pork or chicken BBQ meal",
+          "price": "9.49",
+          "description": "Kiddie fries or apple sauce"
+        }
+      ]
+    },
+    {
+      "name": "Desserts and drinks",
+      "items": [
+        {
+          "name": "Fried cheesecake",
+          "price": "5.99",
+          "description": "Cinnamon and sugar"
+        },
+        {
+          "name": "Fried dough",
+          "price": "3.49",
+          "description": "Ask about toppings"
+        },
+        {
+          "name": "Funnel cake fries",
+          "price": "6.79",
+          "description": "16 oz."
+        },
+        {
+          "name": "Soft drinks",
+          "price": "20 oz. 2.49 / 32 oz. 2.99",
+          "description": ""
+        },
+        {
+          "name": "Fresh-squeezed lemonade",
+          "price": "20 oz. 2.99 / 32 oz. 3.99",
+          "description": ""
+        },
+        {
+          "name": "Arnold Palmer",
+          "price": "20 oz. 3.49 / 32 oz. 4.49",
+          "description": ""
+        },
+        {
+          "name": "Bottled water",
+          "price": "2.49",
+          "description": ""
+        }
+      ]
+    }
+  ]
+}

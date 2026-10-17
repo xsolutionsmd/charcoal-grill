@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Catering · Charcoal Grill</title>
+    <meta name="description" content="Party platters, bulk meats, BBQ Express, Rib Feast, Office Express and custom boxed lunches from Charcoal Grill. Pickup, or delivery and setup with 48 hours' notice.">
+    <meta name="theme-color" content="#171513">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Public+Sans:wght@400;500;600;700&display=swap">
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body class="{{photos-on}}">
+    {{header}}
+    <main id="main">
+      <section class="page-hero" aria-labelledby="page-title">
+        <div class="wrap page-hero-grid">
+          <h1 id="page-title" class="display reveal">Catering <span class="accent">for a crowd</span></h1>
+          <div class="page-hero-copy reveal reveal-late">
+            <p class="lede">Pit beef and barbecue for parties, offices and family gatherings. Pick it up, or have it delivered and set up.</p>
+            <div class="actions">
+              <a class="btn btn-red btn-lg" href="{{phone}}">{{icon-phone}}Call {{phone-label}}</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-tight" aria-labelledby="menus-title">
+        <div class="wrap split">
+          <div class="split-head">
+            <h2 id="menus-title" class="section-title">Catering <span class="accent">menus</span></h2>
+            <p class="muted">Pricing and guest minimums vary by menu. Call to confirm current options.</p>
+          </div>
+          <ul class="offer-list">
+            <li><h3>Party platters</h3></li>
+            <li><h3>Bulk meats</h3></li>
+            <li><h3>BBQ Express</h3></li>
+            <li><h3>Rib Feast</h3></li>
+            <li><h3>Office Express</h3></li>
+            <li><h3>Custom boxed lunches</h3></li>
+          </ul>
+        </div>
+      </section>
+
+      {{photo-catering}}
+
+      <section class="band-dark" aria-labelledby="how-title">
+        <div class="wrap">
+          <h2 id="how-title" class="section-title section-title-light">How it <span class="accent">works</span></h2>
+          <div class="how-grid">
+            <div class="how-item">
+              <h3>Pickup</h3>
+              <p>Collect your order from the restaurant at 8535 Old Harford Road.</p>
+            </div>
+            <div class="how-item">
+              <h3>Delivery and setup</h3>
+              <p>Delivery and setup are available on request.</p>
+            </div>
+            <div class="how-item">
+              <h3>48 hours' notice</h3>
+              <p>Please place catering orders at least 48 hours ahead.</p>
+            </div>
+            <div class="how-item">
+              <h3>Minimums vary</h3>
+              <p>Guest minimums differ by menu. We will confirm current prices, minimums and availability by phone.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="plan-title">
+        <div class="wrap cta-panel">
+          <div>
+            <h2 id="plan-title" class="section-title">Plan your <span class="accent">order</span></h2>
+            <p class="muted">Have your date, headcount and pickup or delivery preference ready.</p>
+          </div>
+          <div class="cta-panel-actions">
+            <a class="phone-big" href="{{phone}}">{{icon-phone}}{{phone-label}}</a>
+            <p class="muted small">Tuesday – Saturday 11am – 8pm · Sunday 11am – 7pm · Closed Monday</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    {{footer}}
+  </body>
+</html>

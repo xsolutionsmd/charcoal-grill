@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Menu · Charcoal Grill</title>
+    <meta name="description" content="Pit sandwiches, Ocean Fries, wings, ribs, salads, junior meals, desserts and drinks at Charcoal Grill in Parkville, MD.">
+    <meta name="theme-color" content="#171513">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Public+Sans:wght@400;500;600;700&display=swap">
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body class="{{photos-on}}">
+    {{header}}
+    <main id="main">
+      <section class="page-hero" aria-labelledby="page-title">
+        <div class="wrap page-hero-grid">
+          <h1 id="page-title" class="display reveal">The <span class="accent">menu</span></h1>
+          <div class="page-hero-copy reveal reveal-late">
+            <p class="lede">Prices as listed on our published menu. Availability can change, so order online or call to confirm.</p>
+            <div class="actions">
+              <a class="btn btn-red" href="{{order}}">{{icon-bag}}Order online</a>
+              <a class="btn btn-line" href="{{phone}}">{{icon-phone}}Call {{phone-label}}</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <nav class="menu-nav" aria-label="Menu sections">
+        <div class="wrap">{{menu-nav}}</div>
+      </nav>
+
+      <div class="wrap menu-body">
+        {{menu-sections}}
+        <aside class="menu-foot">
+          <p><strong>Allergy note:</strong> Ocean Fries are cooked in peanut oil.</p>
+          <p class="muted">For catering menus and party platters, see <a href="/catering/">catering</a>.</p>
+        </aside>
+      </div>
+    </main>
+    {{footer}}
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Visit · Charcoal Grill</title>
+    <meta name="description" content="Charcoal Grill, 8535 Old Harford Road, Parkville, MD 21234. Open Tuesday to Saturday 11am to 8pm, Sunday 11am to 7pm, closed Monday.">
+    <meta name="theme-color" content="#171513">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Public+Sans:wght@400;500;600;700&display=swap">
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body class="{{photos-on}}">
+    {{header}}
+    <main id="main">
+      <section class="page-hero" aria-labelledby="page-title">
+        <div class="wrap page-hero-grid">
+          <h1 id="page-title" class="display reveal">Visit <span class="accent">us</span></h1>
+          <div class="page-hero-copy reveal reveal-late">
+            <p class="lede">On the corner of Putt Hill Avenue and Old Harford Road, next to Liquor Pump.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-tight" aria-label="Address, hours and contact">
+        <div class="wrap visit-grid">
+          <div class="visit-card visit-card-dark">
+            <h2 class="kicker kicker-light">Address</h2>
+            <p class="visit-address">8535 Old Harford Road<br>Parkville, MD 21234</p>
+            <div class="actions">
+              <a class="btn btn-red" href="{{maps}}">{{icon-pin}}Get directions</a>
+              <a class="btn btn-line-light" href="{{phone}}">{{icon-phone}}Call {{phone-label}}</a>
+            </div>
+          </div>
+          <div class="visit-card">
+            <h2 class="kicker">Hours</h2>
+            {{hours}}
+            <p class="muted small">Holiday hours may differ. Call ahead to confirm.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-flush" aria-label="Ordering and gift cards">
+        <div class="wrap duo">
+          <div class="duo-item">
+            <h2 class="kicker">Order ahead</h2>
+            <p class="info-big">Order online, or call the restaurant.</p>
+            <a class="text-link" href="{{order}}">Order online{{icon-arrow}}</a>
+          </div>
+          <div class="duo-item">
+            <h2 class="kicker">Gift cards</h2>
+            <p class="info-big">Available in the restaurant.</p>
+            <a class="text-link" href="{{gift-balance}}">Check a balance{{icon-arrow}}</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    {{footer}}
+  </body>
+</html>

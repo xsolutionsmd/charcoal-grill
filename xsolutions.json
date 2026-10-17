@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "toolkit": "xs-website 1.0 (2026-10-16)",
+  "name": "Charcoal Grill",
+  "slug": "charcoal-grill",
+  "created": "2026-10-17T23:35:36.588208+00:00",
+  "repository": "xsolutionsmd/charcoal-grill",
+  "visibility": "public",
+  "build_type": "landing",
+  "features": [],
+  "endpoint": "full",
+  "identity": {
+    "status": "confirmed",
+    "official_name": "Charcoal Grill",
+    "address": "8535 Old Harford Road, Parkville, MD 21234",
+    "public_phone": "410-668-9212",
+    "public_email": null,
+    "website": "https://www.chargrill.com/",
+    "maps_url": null,
+    "social": {},
+    "evidence": [
+      {
+        "observed": "2026-10-17T23:36:42.488753+00:00",
+        "note": "Official site address and phone match supplied identity; Baltimore Magazine July 2025 listing independently identifies same business and address; official site links matching Facebook and Instagram."
+      },
+      {
+        "observed": "2026-10-17T23:37:43.953247+00:00",
+        "note": "Baltimore Magazine barbecue roundup identifies Charcoal Grill at 8535 Old Harford Road, independently corroborating official site."
+      }
+    ]
+  },
+  "environments": [
+    {
+      "name": "production",
+      "branch": "main",
+      "hostname": "charcoal-grill.xsolutionsmd.com",
+      "slug": "charcoal-grill"
+    },
+    {
+      "name": "derek-dev",
+      "branch": "derek-dev",
+      "hostname": "charcoal-grill-derek-dev.xsolutionsmd.com",
+      "slug": "charcoal-grill-derek-dev"
+    },
+    {
+      "name": "abdul-dev",
+      "branch": "abdul-dev",
+      "hostname": "charcoal-grill-abdul-dev.xsolutionsmd.com",
+      "slug": "charcoal-grill-abdul-dev"
+    }
+  ],
+  "stages": {
+    "identity": {
+      "status": "pending"
+    },
+    "research": {
+      "status": "done",
+      "recorded": "2026-10-17T23:42:47.193428+00:00",
+      "evidence": [
+        "Official address/hours, menu, catering, contact, ChowNow restaurant identity and Square balance verified; concise sourced KB."
+      ]
+    },
+    "spec": {
+      "status": "pending"
+    },
+    "assets": {
+      "status": "pending"
+    },
+    "delivery": {
+      "status": "pending"
+    },
+    "infra": {
+      "status": "pending"
+    },
+    "template": {
+      "status": "pending"
+    },
+    "build": {
+      "status": "pending"
+    },
+    "deploy": {
+      "status": "pending"
+    }
+  },
+  "updated": "2026-10-17T23:42:47.193444+00:00"
+}

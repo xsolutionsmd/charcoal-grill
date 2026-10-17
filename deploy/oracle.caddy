@@ -1,0 +1,3 @@
+charcoal-grill.xsolutionsmd.com {
+    reverse_proxy charcoal-grill:8080
+}

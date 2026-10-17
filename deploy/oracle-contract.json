@@ -1,0 +1,34 @@
+{
+  "schema": 1,
+  "repo": "xsolutionsmd/charcoal-grill",
+  "slug": "charcoal-grill",
+  "hostname": "charcoal-grill.xsolutionsmd.com",
+  "port": 8080,
+  "image": "ghcr.io/xsolutionsmd/charcoal-grill",
+  "mode": "stateless",
+  "architecture": "arm64",
+  "network": "xsolutions-proxy",
+  "environments": [
+    {
+      "name": "production",
+      "branch": "main",
+      "slug": "charcoal-grill",
+      "hostname": "charcoal-grill.xsolutionsmd.com",
+      "image": "ghcr.io/xsolutionsmd/charcoal-grill"
+    },
+    {
+      "name": "derek-dev",
+      "branch": "derek-dev",
+      "slug": "charcoal-grill-derek-dev",
+      "hostname": "charcoal-grill-derek-dev.xsolutionsmd.com",
+      "image": "ghcr.io/xsolutionsmd/charcoal-grill-derek-dev"
+    },
+    {
+      "name": "abdul-dev",
+      "branch": "abdul-dev",
+      "slug": "charcoal-grill-abdul-dev",
+      "hostname": "charcoal-grill-abdul-dev.xsolutionsmd.com",
+      "image": "ghcr.io/xsolutionsmd/charcoal-grill-abdul-dev"
+    }
+  ]
+}
