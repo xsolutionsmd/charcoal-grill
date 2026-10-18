@@ -1,5 +1,7 @@
 # Design brief
 
+> Workflow supersession - October 17, 2026: no Stitch attempts or fallbacks for new work. Follow the repository reference-design skill and canonical `~/.codex/skills/xs-website/SKILL.md` reconstruction/delivery policy. Existing design decisions, task-specific role restrictions and confirmed asset permissions remain effective. Earlier tool attempts/authorship below are dated evidence, not instructions to repeat them.
+
 Current supporting records: [Sol's template reconstruction](template-blueprint.md) and [checked runtime/integration contract](../docs/API.md). The reconstruction requirement arrived after this rebuild; the record identifies browser evidence and unavailable REA CDP transport. Sol's live review of d335271 found no must-fix issues. Astra accepted mobile food-crop/menu-opening refinements and secondary-type/editorial-image findings: mobile hero favors fries and sandwich, menu opening/art are shorter, secondary headings approach the reference's 30-32px scale, and the editorial sandwich fills its half-column. Sol rechecked the corrections live at e060d69 and found no remaining actionable visual or interaction issue.
 
 ## Current correction ? close structural and functional adaptation

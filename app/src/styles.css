@@ -354,12 +354,16 @@ address { font-style: normal; }
 }
 .menu-section { padding-top: clamp(1.5rem, 3vw, 2rem); scroll-margin-top: calc(var(--header-h) + 1rem); }
 .menu-section-title { font: 400 clamp(1.65rem, 2.4vw, 2rem)/1.2 var(--display); letter-spacing: .03em; color: var(--green); text-align: center; margin-bottom: 1.25rem; outline-offset: 6px; }
-.menu-art { margin: 0 auto 1.75rem; }
-.menu-art-sandwich { max-width: 140px; margin-bottom: 1rem; }
-.menu-art-dessert { aspect-ratio: 3 / 1; max-height: 230px; width: 100%; overflow: hidden; }
-.menu-art-dessert img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%; }
 .menu-items { max-width: 860px; margin-inline: auto; }
 .menu-item { padding-block: .7rem; }
+.menu-item.has-photo { display: grid; grid-template-columns: 136px minmax(0, 1fr); align-items: center; gap: 1.5rem; padding-block: .95rem; }
+@media (min-width: 1024px) { .menu-item.has-photo .prices { flex-shrink: 0; max-width: none; } }
+@media (min-width: 640px) and (max-width: 1023.98px) {
+  .menu-item.has-photo.is-multi .menu-line { flex-wrap: wrap; }
+  .menu-item.has-photo.is-multi .leader { display: none; }
+  .menu-item.has-photo.is-multi .prices { flex-basis: 100%; max-width: none; justify-content: flex-start; margin-top: .2rem; }
+}
+.menu-photo { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; background: var(--pale); }
 .menu-line { display: flex; align-items: baseline; gap: .6rem; }
 .menu-line h3 { flex: 0 1 auto; font-size: 1.03rem; font-weight: 600; line-height: 1.4; color: var(--char); }
 .leader { flex: 1 1 1.5rem; min-width: 1.5rem; position: relative; top: -.3em; border-bottom: 2px dotted rgba(35, 33, 29, .32); }
@@ -378,6 +382,13 @@ address { font-style: normal; }
   .menu-item.is-multi .leader { display: none; }
   .menu-item.is-multi .prices { flex-basis: 100%; max-width: none; justify-content: flex-start; margin-top: .2rem; }
   .prices { max-width: 48%; }
+  /* Thumbnail heads the row beside the name; prices and description use the full width. */
+  .menu-item.has-photo { grid-template-columns: 88px minmax(0, 1fr); gap: 0 .95rem; }
+  .menu-item.has-photo .menu-copy, .menu-item.has-photo .menu-line { display: contents; }
+  .menu-item.has-photo h3 { grid-column: 2; }
+  .menu-item.has-photo .leader { display: none; }
+  .menu-item.has-photo .prices { grid-column: 1 / -1; max-width: none; justify-content: flex-start; margin-top: .6rem; }
+  .menu-item.has-photo p { grid-column: 1 / -1; }
 }
 
 /* Feature: editorial copy beside a large photograph (Catering, Visit) */

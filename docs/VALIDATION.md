@@ -1,5 +1,13 @@
 # Validation
 
+## Combined production release - October 18, 2026
+
+The owner authorized moving both personal branches to production. This supersedes the preview-only restrictions in the historical records below. Derek's 32-of-44 menu-photo update was released in production revision `782731bcea502273e59f6b872ae8e63059772ffd` through PR 4; exact-revision five-route, 33-asset, health, noindex and 404 checks passed.
+
+The combined candidate preserves those menu photos and adds Abdul's independently reviewed official header/favicon logo from `10385d95a75fcf30928dc18975d469e9c975ce61` (reviewed product `eb5d5a4`). It retains **It still tastes so good!**, removes the anniversary block, and preserves all 44 menu names/prices/descriptions. Only the two historical handoff/validation records conflicted; both records are retained below. Application changes merged without conflict.
+
+Combined candidate checks, protected PR promotion and final live desktop/mobile review must be verified for the actual released revision. Consult GitHub Actions and each environment's `/version.json`; private release receipts retain exact revision/digest and final review evidence. Prior preview-only/current-version statements below describe their dated releases, not the current authorization. No new asset collection, site redesign or external checkout test is required for this promotion.
+
 ## Header logo — October 18, 2026
 
 Reviewed product revision: `eb5d5a46e70af20294c9b1a53e64b52ae56f39d7`, branch `abdul-dev`, https://charcoal-grill-abdul-dev.xsolutionsmd.com/. Application CI [39102184406](https://github.com/xsolutionsmd/charcoal-grill/actions/runs/39102184406) and Oracle preview release [39102184355](https://github.com/xsolutionsmd/charcoal-grill/actions/runs/39102184355) passed. Local Vite build/content checks and public scan passed before publication. Live smoke passed five routes, eight local assets, external link declarations, noindex, health, exact revision and HTTP404 behavior.
@@ -14,6 +22,16 @@ The independent final live recheck passed all seven recorded cases, with no acti
 Native tab-strip pixels were inaccessible, so native favicon appearance is unverified. CSS viewport checks do not certify physical devices. Reduced-motion runtime emulation was unavailable. This focused recheck reuses the earlier broader navigation evidence and makes no new checkout, payment or full-audit claim. Earlier header-only `658a1a1` and favicon-only `3015497` releases are historical; the tagline revision above supersedes them.
 
 Any later documentation-only release must verify its own branch/live revision and source parity against this reviewed product. Documentation changes do not change the product or imply another visual review. Exact final documentation SHA, Actions and parity evidence remain in the private update handoff.
+
+## Current Derek menu-photo release - October 18, 2026
+
+The accepted application revision is `9465fbb1be1bb17afbeecbdb07374cfea7662b39` on `derek-dev`: **32/44 entries illustrated, 45 originals in the private library, 12 photo gaps**. All 44 menu names, prices and descriptions compare equal to `5f76655604e7b3052e46233f2abf5912d457c1de` after excluding image metadata. The 39-file production build, public-content scan, original/package hash checks and five-route/33-local-asset/health/version/noindex/HTTP404/integration-link smoke checks pass. [Oracle release](https://github.com/xsolutionsmd/charcoal-grill/actions/runs/39098144691) and [application CI](https://github.com/xsolutionsmd/charcoal-grill/actions/runs/39098144709) succeeded at that application revision.
+
+Astra accepted Sol's independent full live review at `21bef5ec143d46d34354a07767a71e00018f05d1`: all five routes, 29 illustrated entries/six categories, 1440px desktop and 390/360px phone views, category URL/history, navigation/focus, FAQ, ordering handoff and sampled transitions passed. The subsequent focused live recheck at `9465fbb` passed the three new associations, 32/44 count, image decoding, row-level containment, category/history and mobile navigation at the same widths. Eight selected screenshots are retained privately. No actionable fixes remain; the final documentation commit changes no application/runtime source. Final environment SHA, Actions and HTTP convergence evidence are recorded privately alongside the separately retained reviewed application SHA.
+
+The ham image is an official historical special, with current toppings/recipe unconfirmed. The catering crop is a medium-confidence likely-pork inference used for Pork BBQ and the junior BBQ entry; chicken remains a competing interpretation and the caption does not identify the protein. It does not establish sandwich, included sides or junior portion. See [provenance and all 12 gaps](../kb/menu-photos.md). No substitute image is used to conceal a missing dish photo.
+
+Provider limit: Escape inside the cross-origin ChowNow iframe is not forwarded to the host; visible Close and host-focused Escape work. Cart/checkout/payment and real Square lookup remain unverified. No real orders, calls, customer messages or payments were made. Resized Chromium does not certify physical devices, Safari or screen-reader behavior. Source collection remains bounded. Main/production and Abdul remain `6a6964b5f35b3c6517df452be2dde460042e4fdc`; only Derek's environment receives this expansion. Final media/Slack read-back and cleanup receipts stay private. Earlier records below describe their historical revisions, not current pending work.
 
 ## Current structural release
 
@@ -32,3 +50,11 @@ Exact release revisions, Actions/image receipts, screenshots and final delivery 
 The chosen Hawksmoor reference is documented in kb/template-blueprint.md. Its new reconstruction requirement arrived after the rebuild: supported browser evidence was collected, while REA passive capture was unavailable without a compatible CDP endpoint. The initial bounded Stitch attempt timed out. Do not claim either unavailable tool completed.
 
 T3 inspections use desktop Chrome with CSS viewport changes; no physical-device certification. Reduced-motion runtime preference could not be emulated; provider checkout/payment, card validation and success/error states beyond the selected integration handoff remain untested. Current prices, holiday hours and catering details require restaurant confirmation before official launch. All environments remain noindex demos; chargrill.com was not changed.
+
+## Earlier local menu-photo checks - October 18, 2026
+
+Astra prepared 22 illustrated entries from verified source matches, including two captioned Yelp originals and SVG viewport crops of identifiable dishes. The existing 44 names, prices and descriptions compare equal to revision 5f76655 after removing image metadata. `npm --prefix app run check` passes (30 built files). Desktop 1440?900 and mobile 390?844 crop/layout inspection passed, with no page overflow. Local HTTP smoke coverage now includes SVG image references. These are local checks; the next deployed revision and independent live recheck are recorded separately in the private release receipt. Unpictured items remain explicit in kb/menu-photos.md.
+
+The subsequent social/review batch adds seven inspected source photographs for Chesapeake chicken, poppers, half chicken, Italian sausage, fried pickles, fried cheesecake and soft drinks. The source now illustrates 29/44 entries. Build checks pass (37 files); targeted 390px crops were inspected. Full-size originals remain unchanged, with SVG viewport crops in markup. Exact sourcing and variant limitations are in kb/menu-photos.md. Independent live verification is pending this revision's deployment.
+
+The next source change reaches 32/44 illustrated entries using two additional business originals and three menu associations. Historical ham preparation and inferred pulled-pork identity are explicitly documented. The 39-file build passed; desktop 1440px and mobile 390px crop checks passed without overflow. Source menu facts remain unchanged. This paragraph records local checks, not a completed live recheck.

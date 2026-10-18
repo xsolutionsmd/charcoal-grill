@@ -133,20 +133,35 @@ const menuFilter = () => `<ul class="menu-filter-list">
   <li><a href="/menu/?category=${slug(c.name)}" data-menu-filter="${slug(c.name)}">${esc(c.name)}</a></li>`).join('')}
 </ul>`;
 
-const CATEGORY_PHOTOS = { 'Pit sandwiches': 'sandwich', 'Desserts and drinks': 'dessert' };
+// Photographed entries carry a lead thumbnail beside the same name/price row;
+// entries without a matched photograph stay plain menu-paper rows.
+const menuItem = i => {
+  const cls = `menu-item${priceOptions(i.price).length > 1 ? ' is-multi' : ''}${i.image ? ' has-photo' : ''}`;
+  const copy = `<div class="menu-line"><h3>${esc(i.name)}</h3><span class="leader" aria-hidden="true"></span>${priceHtml(i.price)}</div>
+      ${i.description ? `<p>${esc(i.description)}</p>` : ''}`;
+  if (!i.image) return `
+    <li class="${cls}">
+      ${copy}
+    </li>`;
+  const { src, alt, width, height, crop } = i.image;
+  // A viewport can show an identifiable dish in a shared source photograph.
+  // The original image bytes remain unchanged and shared between menu entries.
+  const media = crop
+    ? `<svg class="menu-photo" role="img" aria-label="${esc(alt)}" width="640" height="480" viewBox="${crop.join(' ')}" overflow="hidden"><image href="${esc(src)}" width="${width}" height="${height}"/></svg>`
+    : `<img class="menu-photo" src="${esc(src)}" width="${width}" height="${height}" alt="${esc(alt)}" loading="lazy" decoding="async">`;
+  return `
+    <li class="${cls}">
+      ${media}
+      <div class="menu-copy">${copy}</div>
+    </li>`;
+};
 
 const menuSections = () => menu.categories.map(c => {
   const id = slug(c.name);
-  const art = CATEGORY_PHOTOS[c.name];
   return `
 <section class="menu-section" id="${id}" data-menu-category="${id}" aria-labelledby="${id}-title">
   <h2 class="menu-section-title" id="${id}-title">${esc(c.name)}</h2>
-  ${art ? photo(art, `menu-art menu-art-${art}`) : ''}
-  <ul class="menu-items">${c.items.map(i => `
-    <li class="menu-item${priceOptions(i.price).length > 1 ? ' is-multi' : ''}">
-      <div class="menu-line"><h3>${esc(i.name)}</h3><span class="leader" aria-hidden="true"></span>${priceHtml(i.price)}</div>
-      ${i.description ? `<p>${esc(i.description)}</p>` : ''}
-    </li>`).join('')}
+  <ul class="menu-items">${c.items.map(menuItem).join('')}
   </ul>
 </section>`;
 }).join('');
