@@ -2,11 +2,18 @@
 
 ## Header logo — October 18, 2026
 
-Tagline correction: updated image inspected for exact wording It still tastes so good!, transparent background and absent anniversary section. Local 1280px/320px views checked with the 80/74px header, updated icon resource and retained mobile controls. New hosted revision and independent recheck are pending publication.
+Reviewed product revision: `eb5d5a46e70af20294c9b1a53e64b52ae56f39d7`, branch `abdul-dev`, https://charcoal-grill-abdul-dev.xsolutionsmd.com/. Application CI [39102184406](https://github.com/xsolutionsmd/charcoal-grill/actions/runs/39102184406) and Oracle preview release [39102184355](https://github.com/xsolutionsmd/charcoal-grill/actions/runs/39102184355) passed. Local Vite build/content checks and public scan passed before publication. Live smoke passed five routes, eight local assets, external link declarations, noindex, health, exact revision and HTTP404 behavior.
 
-Header-only release 658a1a1 passed hosted Application CI and Oracle preview release plus independent live review at 1440, 390, 360 and 320px. Home-link keyboard navigation, mobile menu open/close/Escape/focus wrapping, sticky placement and hover transition passed with no findings. The follow-up replaces all six favicon links with the same cleaned PNG; hosted favicon verification follows publication.
+The independent final live recheck passed all seven recorded cases, with no actionable findings:
 
-Local Vite build/content checks pass. Rendered header checked at 1280 × 800 and 360 × 800: loaded transparent logo, correct centered desktop placement, contained mobile logo/order/menu controls and no horizontal overflow. Mobile disclosure opens, Escape closes it and restores toggle focus. Explicit image dimensions reserve space; existing reduced-motion CSS covers the opacity transition. Runtime reduced-motion emulation is not claimed. Hosted release and independent review results follow in the update handoff.
+- Exact **It still tastes so good!** is visible beneath Grill; no 35/YEARS/Est.1990 artwork. The transparent live PNG decodes at 1882×836; SHA256 `dec9e09685540436c358cfd63452858667621cea188cd991ed30b620afd36f4a` matches the checkout asset.
+- At 1440×1000, 390×844 and 320×700, the 80/74px header contains the complete 152×68/128×58px logo and separate Order/Menu controls without clipping, overlap or horizontal overflow. The open narrow menu's controls fit its panel; its animation settles below the 74px header.
+- Menu opening focuses Home and makes background content inert. Escape closes and restores visible toggle focus; Enter reopening and forward/backward focus wrapping pass. About navigation closes the menu; keyboard focus on the logo is visible and Enter returns home.
+- All five pages and the 404 document declare `image/png` favicon and header resources at `/assets/charcoal-grill-logo-tagline.png`, with no old SVG declaration; the live resource loads and decodes.
+
+Native tab-strip pixels were inaccessible, so native favicon appearance is unverified. CSS viewport checks do not certify physical devices. Reduced-motion runtime emulation was unavailable. This focused recheck reuses the earlier broader navigation evidence and makes no new checkout, payment or full-audit claim. Earlier header-only `658a1a1` and favicon-only `3015497` releases are historical; the tagline revision above supersedes them.
+
+Any later documentation-only release must verify its own branch/live revision and source parity against this reviewed product. Documentation changes do not change the product or imply another visual review. Exact final documentation SHA, Actions and parity evidence remain in the private update handoff.
 
 ## Current structural release
 

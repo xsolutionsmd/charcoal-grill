@@ -2,13 +2,15 @@
 
 ## Header logo update — October 18, 2026
 
-Latest correction: retain the original tagline **It still tastes so good!**. The earlier omission was not requested. The replacement transparent logo now includes it beneath Grill, and the header and all browser-tab icons use the new tagline asset. Desktop/mobile headers are 80/74px tall to give the complete mark room. Keep the anniversary 35/YEARS/Est.1990 removed. This supersedes the earlier tagline-removal choice below; same abdul-dev-only scope.
+Completed product revision: `eb5d5a46e70af20294c9b1a53e64b52ae56f39d7`, reviewed live on branch `abdul-dev` at https://charcoal-grill-abdul-dev.xsolutionsmd.com/. This update authorizes only Abdul's preview; production and Derek's branch/environment were not changed by it. Later documentation-only commits retain this reviewed product when application/runtime source parity is verified; they do not constitute a new product change.
 
-Abdul requested the official website logo in place of the centered header text, without the 35th-anniversary element. The shared header now uses a transparent, cleaned green/red logo on all pages, with responsive dimensions, an accessible home link and restrained hover fade. Source and transformation are recorded in media.md. The accepted page layout and menu content are preserved.
+The official green/red logo replaces the centered header text and preserves the exact original tagline **It still tastes so good!** beneath Grill. The anniversary 35/YEARS/Est.1990 artwork is removed. Header and all six favicon declarations (five pages plus 404) use the transparent `charcoal-grill-logo-tagline.png`; the placeholder SVG is removed. Desktop/mobile headers are 80/74px, with logo dimensions 152×68/128×58px. Source and transformation are recorded in [media.md](media.md). The accepted page layout and menu content are preserved.
 
-Scope: abdul-dev and its preview only. Header release 658a1a1 passed both hosted workflows and independent live review at desktop/mobile/narrow widths, including home navigation, mobile menu/focus, sticky header and smooth hover. No findings remained.
+Both hosted workflows passed for the reviewed product revision. The independent final live recheck passed seven cases with no actionable findings: exact tagline/transparency/no anniversary, desktop/mobile/narrow containment at 1440/390/320px, menu animation and Escape/focus behavior, keyboard home navigation, and all six icon declarations with decoded live PNG/hash identity. Five-route/eight-asset/health/revision/404 smoke also passed. See [validation](../docs/VALIDATION.md).
 
-Abdul's follow-up also requests the browser-tab icon. All five pages and the 404 page now reference the same cleaned transparent PNG; the old placeholder SVG is removed. This reuses the cached header asset without adding a second logo download. The favicon change is pending its hosted release and focused live recheck.
+Limit: native browser tab-strip pixels were inaccessible. Favicon declarations, resource delivery, decoding and hash were verified; native icon appearance remains unverified. Earlier header-only `658a1a1` and favicon-only `3015497` releases are superseded by the reviewed tagline revision above. No product fixes remain from this scoped review; coordinator acceptance and private delivery-receipt reconciliation are separate from product validation.
+
+## Existing structural site — historical baseline
 
 Charcoal Grill has a reference-led, static multipage website with Home, Menu, Catering, About and Visit at separate URLs. It uses all five approved business photos, a restrained Marcellus/Manrope type system and green/red brand cues from its packaging. The homepage, centered menu paper and editorial pages follow the inspected Hawksmoor structure.
 
