@@ -72,7 +72,7 @@ const header = current => `
 <header class="site-header" data-header>
   <div class="header-bar">
     <nav class="primary-nav" aria-label="Primary"><ul>${navLinks(current)}</ul></nav>
-    <a class="wordmark" href="/"${current === '/' ? ' aria-current="page"' : ''}>Charcoal Grill</a>
+    <a class="wordmark header-brand" href="/" aria-label="Charcoal Grill home"${current === '/' ? ' aria-current="page"' : ''}><img class="brand-logo" src="/assets/charcoal-grill-logo-tagline.png" alt="Charcoal Grill" width="1882" height="836" fetchpriority="high" /></a>
     <div class="header-actions">
       <a class="header-phone" href="${SITE.phone}">${icon.phone}<span>${SITE.phoneLabel}</span></a>
       ${orderLink('btn btn-outline btn-sm header-order', 'Order<span class="order-long"> online</span>')}

@@ -1,5 +1,25 @@
 # Handoff
 
+## Combined production release - October 18, 2026
+
+The owner authorized moving both personal branches to production. This supersedes the preview-only restrictions in the historical records below. Derek's 32-of-44 menu-photo update was released in production revision `782731bcea502273e59f6b872ae8e63059772ffd` through PR 4; exact-revision five-route, 33-asset, health, noindex and 404 checks passed.
+
+The combined candidate preserves those menu photos and adds Abdul's independently reviewed official header/favicon logo from `10385d95a75fcf30928dc18975d469e9c975ce61` (reviewed product `eb5d5a4`). It retains **It still tastes so good!**, removes the anniversary block, and preserves all 44 menu names/prices/descriptions. Only the two historical handoff/validation records conflicted; both records are retained below. Application changes merged without conflict.
+
+Combined candidate checks, protected PR promotion and final live desktop/mobile review must be verified for the actual released revision. Consult GitHub Actions and each environment's `/version.json`; private release receipts retain exact revision/digest and final review evidence. Prior preview-only/current-version statements below describe their dated releases, not the current authorization. No new asset collection, site redesign or external checkout test is required for this promotion.
+
+## Header logo update — October 18, 2026
+
+Completed product revision: `eb5d5a46e70af20294c9b1a53e64b52ae56f39d7`, reviewed live on branch `abdul-dev` at https://charcoal-grill-abdul-dev.xsolutionsmd.com/. This update authorizes only Abdul's preview; production and Derek's branch/environment were not changed by it. Later documentation-only commits retain this reviewed product when application/runtime source parity is verified; they do not constitute a new product change.
+
+The official green/red logo replaces the centered header text and preserves the exact original tagline **It still tastes so good!** beneath Grill. The anniversary 35/YEARS/Est.1990 artwork is removed. Header and all six favicon declarations (five pages plus 404) use the transparent `charcoal-grill-logo-tagline.png`; the placeholder SVG is removed. Desktop/mobile headers are 80/74px, with logo dimensions 152×68/128×58px. Source and transformation are recorded in [media.md](media.md). The accepted page layout and menu content are preserved.
+
+Both hosted workflows passed for the reviewed product revision. The independent final live recheck passed seven cases with no actionable findings: exact tagline/transparency/no anniversary, desktop/mobile/narrow containment at 1440/390/320px, menu animation and Escape/focus behavior, keyboard home navigation, and all six icon declarations with decoded live PNG/hash identity. Five-route/eight-asset/health/revision/404 smoke also passed. See [validation](../docs/VALIDATION.md).
+
+Limit: native browser tab-strip pixels were inaccessible. Favicon declarations, resource delivery, decoding and hash were verified; native icon appearance remains unverified. Earlier header-only `658a1a1` and favicon-only `3015497` releases are superseded by the reviewed tagline revision above. No product fixes remain from this scoped review; coordinator acceptance and private delivery-receipt reconciliation are separate from product validation.
+
+## Existing structural site — historical baseline
+
 ## Current menu-photo expansion - October 18, 2026
 
 Derek requested real photos for every menu item and expanded collection beyond ordering apps. The [Derek menu preview](https://charcoal-grill-derek-dev.xsolutionsmd.com/menu/) is live with **32 of 44 entries illustrated**, with **12 remaining photo gaps** and **45 originals** in the private library. The independently reviewed application revision is `9465fbb1be1bb17afbeecbdb07374cfea7662b39`. The final documentation commit retains that exact application/runtime tree; its deployed environment revision is tracked separately in private release receipts. This is partial coverage, not all-item completion. Menu names/prices/descriptions are unchanged against `5f76655604e7b3052e46233f2abf5912d457c1de`. Production/main and Abdul remain at `6a6964b5f35b3c6517df452be2dde460042e4fdc` and are outside this change.

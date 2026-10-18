@@ -1,5 +1,28 @@
 # Validation
 
+## Combined production release - October 18, 2026
+
+The owner authorized moving both personal branches to production. This supersedes the preview-only restrictions in the historical records below. Derek's 32-of-44 menu-photo update was released in production revision `782731bcea502273e59f6b872ae8e63059772ffd` through PR 4; exact-revision five-route, 33-asset, health, noindex and 404 checks passed.
+
+The combined candidate preserves those menu photos and adds Abdul's independently reviewed official header/favicon logo from `10385d95a75fcf30928dc18975d469e9c975ce61` (reviewed product `eb5d5a4`). It retains **It still tastes so good!**, removes the anniversary block, and preserves all 44 menu names/prices/descriptions. Only the two historical handoff/validation records conflicted; both records are retained below. Application changes merged without conflict.
+
+Combined candidate checks, protected PR promotion and final live desktop/mobile review must be verified for the actual released revision. Consult GitHub Actions and each environment's `/version.json`; private release receipts retain exact revision/digest and final review evidence. Prior preview-only/current-version statements below describe their dated releases, not the current authorization. No new asset collection, site redesign or external checkout test is required for this promotion.
+
+## Header logo — October 18, 2026
+
+Reviewed product revision: `eb5d5a46e70af20294c9b1a53e64b52ae56f39d7`, branch `abdul-dev`, https://charcoal-grill-abdul-dev.xsolutionsmd.com/. Application CI [39102184406](https://github.com/xsolutionsmd/charcoal-grill/actions/runs/39102184406) and Oracle preview release [39102184355](https://github.com/xsolutionsmd/charcoal-grill/actions/runs/39102184355) passed. Local Vite build/content checks and public scan passed before publication. Live smoke passed five routes, eight local assets, external link declarations, noindex, health, exact revision and HTTP404 behavior.
+
+The independent final live recheck passed all seven recorded cases, with no actionable findings:
+
+- Exact **It still tastes so good!** is visible beneath Grill; no 35/YEARS/Est.1990 artwork. The transparent live PNG decodes at 1882×836; SHA256 `dec9e09685540436c358cfd63452858667621cea188cd991ed30b620afd36f4a` matches the checkout asset.
+- At 1440×1000, 390×844 and 320×700, the 80/74px header contains the complete 152×68/128×58px logo and separate Order/Menu controls without clipping, overlap or horizontal overflow. The open narrow menu's controls fit its panel; its animation settles below the 74px header.
+- Menu opening focuses Home and makes background content inert. Escape closes and restores visible toggle focus; Enter reopening and forward/backward focus wrapping pass. About navigation closes the menu; keyboard focus on the logo is visible and Enter returns home.
+- All five pages and the 404 document declare `image/png` favicon and header resources at `/assets/charcoal-grill-logo-tagline.png`, with no old SVG declaration; the live resource loads and decodes.
+
+Native tab-strip pixels were inaccessible, so native favicon appearance is unverified. CSS viewport checks do not certify physical devices. Reduced-motion runtime emulation was unavailable. This focused recheck reuses the earlier broader navigation evidence and makes no new checkout, payment or full-audit claim. Earlier header-only `658a1a1` and favicon-only `3015497` releases are historical; the tagline revision above supersedes them.
+
+Any later documentation-only release must verify its own branch/live revision and source parity against this reviewed product. Documentation changes do not change the product or imply another visual review. Exact final documentation SHA, Actions and parity evidence remain in the private update handoff.
+
 ## Current Derek menu-photo release - October 18, 2026
 
 The accepted application revision is `9465fbb1be1bb17afbeecbdb07374cfea7662b39` on `derek-dev`: **32/44 entries illustrated, 45 originals in the private library, 12 photo gaps**. All 44 menu names, prices and descriptions compare equal to `5f76655604e7b3052e46233f2abf5912d457c1de` after excluding image metadata. The 39-file production build, public-content scan, original/package hash checks and five-route/33-local-asset/health/version/noindex/HTTP404/integration-link smoke checks pass. [Oracle release](https://github.com/xsolutionsmd/charcoal-grill/actions/runs/39098144691) and [application CI](https://github.com/xsolutionsmd/charcoal-grill/actions/runs/39098144709) succeeded at that application revision.
