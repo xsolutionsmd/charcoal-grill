@@ -20,7 +20,19 @@
         {
           "name": "Roma Italian sausage",
           "price": "Regular 9.79 / Colossal 14.29",
-          "description": "Peppers and onions"
+          "description": "Peppers and onions",
+          "image": {
+            "src": "/assets/menu/italian-sausage.jpg",
+            "alt": "Grilled sausages and onions",
+            "width": 640,
+            "height": 640,
+            "crop": [
+              0,
+              80,
+              640,
+              480
+            ]
+          }
         },
         {
           "name": "Ham",
@@ -52,7 +64,19 @@
         {
           "name": "Chesapeake chicken",
           "price": "Regular 8.79 / Colossal 12.99",
-          "description": "Old Bay, sourdough, mayo, lettuce and tomato"
+          "description": "Old Bay, sourdough, mayo, lettuce and tomato",
+          "image": {
+            "src": "/assets/menu/chesapeake-chicken.jpg",
+            "alt": "Chesapeake chicken sandwich on a kaiser roll",
+            "width": 1024,
+            "height": 1024,
+            "crop": [
+              20,
+              40,
+              960,
+              720
+            ]
+          }
         },
         {
           "name": "Combo",
@@ -213,7 +237,19 @@
         {
           "name": "Half chicken",
           "price": "Regular 14.39 / Dinner 18.79",
-          "description": ""
+          "description": "",
+          "image": {
+            "src": "/assets/menu/half-chicken.jpg",
+            "alt": "Chicken cooking on the Charcoal Grill",
+            "width": 1200,
+            "height": 1600,
+            "crop": [
+              0,
+              450,
+              1200,
+              900
+            ]
+          }
         },
         {
           "name": "Half ribs and chicken dinner",
@@ -260,7 +296,19 @@
         {
           "name": "Poppers",
           "price": "6.99",
-          "description": "Popper jam"
+          "description": "Popper jam",
+          "image": {
+            "src": "/assets/menu/poppers.jpg",
+            "alt": "Breaded poppers with dipping sauce",
+            "width": 1024,
+            "height": 1024,
+            "crop": [
+              0,
+              100,
+              1024,
+              768
+            ]
+          }
         },
         {
           "name": "Chicken tenders",
@@ -316,7 +364,19 @@
         {
           "name": "Fried pickles",
           "price": "6.99",
-          "description": "Bistro sauce"
+          "description": "Bistro sauce",
+          "image": {
+            "src": "/assets/menu/fried-pickles.jpg",
+            "alt": "Breaded pickle spears on the appetizer sampler",
+            "width": 612,
+            "height": 612,
+            "crop": [
+              170,
+              70,
+              240,
+              180
+            ]
+          }
         }
       ]
     },
@@ -381,7 +441,19 @@
         {
           "name": "Fried cheesecake",
           "price": "5.99",
-          "description": "Cinnamon and sugar"
+          "description": "Cinnamon and sugar",
+          "image": {
+            "src": "/assets/menu/fried-cheesecake.jpg",
+            "alt": "Fried cheesecake in a takeaway tray",
+            "width": 1080,
+            "height": 1920,
+            "crop": [
+              0,
+              650,
+              1080,
+              810
+            ]
+          }
         },
         {
           "name": "Fried dough",
@@ -408,7 +480,19 @@
         {
           "name": "Soft drinks",
           "price": "20 oz. 2.49 / 32 oz. 2.99",
-          "description": ""
+          "description": "",
+          "image": {
+            "src": "/assets/menu/soft-drink.jpg",
+            "alt": "Iced drink in a Charcoal Grill cup",
+            "width": 1203,
+            "height": 1500,
+            "crop": [
+              0,
+              500,
+              480,
+              360
+            ]
+          }
         },
         {
           "name": "Fresh-squeezed lemonade",
