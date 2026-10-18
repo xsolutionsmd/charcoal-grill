@@ -13,24 +13,36 @@ company folder; verified Slack deliveries are recorded separately in private/del
 | facebook | partial | 0 |  | Official link confirmed; feed collection deferred under speed-first request. |
 | google-maps | restricted | 0 |  | Reference only; no map photos cached. |
 | instagram | partial | 0 |  | Official link confirmed; feed collection deferred under speed-first request. |
-| website | partial | 5 |  | Five strongest official food images collected for reference; speed-first scope, no exhaustive history. Reuse permission pending. |
+| website | partial | 5 |  | Five official food images collected and used on the site; bounded speed-first collection. |
 
 ## Provenance
 
 | Rights (provenance only) | Files |
 |---|---|
-| reference-only | 5 |
+| business-official | 5 |
 
 ## Shortlist (main agent's picks for the site)
 
 The full library is in the private company folder (`private/assets/originals/`, provenance in
 `private/assets/manifest.json`); the frontend may choose other or additional files from it.
 
-No shortlist yet.
+| File (sha256 prefix) | Role | Type | Size | Rights | Source page | Note |
+|---|---|---|---|---|---|---|
+| 7803eecf3274 | hero | image | 1203x609 | business-official | https://www.chargrill.com/ | Home hero; preserve sandwich and branded packaging. |
+| 26e3877be6d1 | service:menu | image | 942x890 | business-official | https://www.chargrill.com/our-menu | Menu pit-sandwich category; show the complete sandwich. |
+| 2725ebfc4362 | about | image | 1283x1600 | business-official | https://www.chargrill.com/our-menu | About cooking section; preserve portrait composition. |
+| 5e6de95285d5 | service:catering | image | 1920x1282 | business-official | https://www.chargrill.com/our-menu | Catering; keep both bowls visible. |
+| aa6d02beeea1 | service:desserts | image | 1920x1179 | business-official | https://www.chargrill.com/our-menu | Menu desserts category; image supplied by the official menu. |
 
 ## Used on the website
 
-None selected yet.
+| Site file | Type | Source page | Rights |
+|---|---|---|---|
+| app/public/assets/pit-beef-meal.jpg | image | https://www.chargrill.com/ | business-official |
+| app/public/assets/pit-beef-sandwich.jpg | image | https://www.chargrill.com/our-menu | business-official |
+| app/public/assets/chicken-wings.jpg | image | https://www.chargrill.com/our-menu | business-official |
+| app/public/assets/chicken-caesar-salads.jpg | image | https://www.chargrill.com/our-menu | business-official |
+| app/public/assets/fried-dough.jpg | image | https://www.chargrill.com/our-menu | business-official |
 
 All collected media of the business may be used in every environment, including production,
 because this site is built for the business. The rights field records provenance only; it does not block use.

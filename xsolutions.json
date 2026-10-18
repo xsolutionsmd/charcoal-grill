@@ -64,7 +64,11 @@
       "status": "pending"
     },
     "assets": {
-      "status": "pending"
+      "status": "done",
+      "recorded": "2026-10-18T00:44:01.176717+00:00",
+      "evidence": [
+        "Five official business photos verified, shortlisted, selected and mapped to rendered pages; bounded source coverage recorded."
+      ]
     },
     "delivery": {
       "status": "pending"
@@ -86,19 +90,20 @@
     },
     "build": {
       "status": "done",
-      "recorded": "2026-10-18T00:08:22.305073+00:00",
+      "recorded": "2026-10-18T00:44:01.342217+00:00",
       "evidence": [
         "Initial Claude frontend; Astra reference-driven correction after user typography rejection and Sol live review. Vite check passes; desktop home and 360px Visit render/containment verified; live release validation tracked privately.",
-        "Astra template fit explicitly maps sourced business facts, five actual reference photos/rights and static integration scope; b62f996 rendered bundle unchanged by this evidence-only update. Build checks and targeted visuals passed."
+        "Astra template fit explicitly maps sourced business facts, five actual reference photos/rights and static integration scope; b62f996 rendered bundle unchanged by this evidence-only update. Build checks and targeted visuals passed.",
+        "All five collected photos included as local assets using the existing inspected Hawksmoor reference. Build/source checks pass; desktop/mobile hero, menu photos, catering and About composition inspected with zero overflow. Previous Sol fixes retained."
       ],
       "inputs_sha256": {
         "kb/features.md": "61ab19684b758b96983c0939afe862ccdfe72af8b1f5058afc7c28ed63027c23",
-        "kb/design-brief.md": "079d16243380bf9592ab20b54450f04987bce8ed6d87cd5aa35c809bb004d008"
+        "kb/design-brief.md": "70d31f369ee6f699439c8fc6afdfc3188c4b6920211258ac41b78c606b751d63"
       }
     },
     "deploy": {
       "status": "pending"
     }
   },
-  "updated": "2026-10-18T00:08:22.306382+00:00"
+  "updated": "2026-10-18T00:44:01.342702+00:00"
 }

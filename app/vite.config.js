@@ -1,4 +1,4 @@
-// Static multi-page build. Shared header/footer, the menu and optional photo slots are
+// Static multi-page build. Shared header/footer, the menu and business photos are
 // rendered into each page's HTML at build time so every route works without JavaScript.
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
@@ -17,26 +17,27 @@ export const SITE = {
   contact: 'https://www.chargrill.com/contact/application',
 };
 
-// Photo permission is pending. Keep false until reuse is cleared. To enable, set true and
-// add each URL below (all srcset entries) to app/xs-check.json allowedExternalResources,
-// or replace them with optimized local files in app/public/.
-const SHOW_PHOTOS = false;
-const CDN = 'https://irp.cdn-website.com/d0951e0a/dms3rep/multi/opt/';
+// Selected official business photos are served locally with the site.
 const PHOTOS = {
-  band: {
+  hero: {
     alt: 'Pit beef sandwich with tomato and onion beside a cup of fresh-cut fries and barbecue sauce',
-    sizes: '100vw', width: 1203, height: 609,
-    srcset: [['BeefValuemeal-640w.jpg', 640], ['BeefValuemeal-960w.jpg', 960], ['BeefValuemeal-1920w.jpg', 1203]],
+    width: 1203, height: 609, src: '/assets/pit-beef-meal.jpg',
+  },
+  sandwich: {
+    alt: 'Charcoal Grill pit beef sandwich with lettuce, tomato and onion',
+    width: 942, height: 890, src: '/assets/pit-beef-sandwich.jpg',
   },
   catering: {
     alt: 'Grilled chicken Caesar salads packed in carry-out bowls on the kitchen counter',
-    sizes: '(min-width: 900px) 45vw, 100vw', width: 1920, height: 1282,
-    srcset: [['JPEG+image+6-640w.jpeg', 640], ['JPEG+image+6-960w.jpeg', 960], ['JPEG+image+6-1280w.jpeg', 1280]],
+    width: 1920, height: 1282, src: '/assets/chicken-caesar-salads.jpg',
   },
   wings: {
     alt: 'Wings with celery, carrots and ranch on a wooden board',
-    sizes: '(min-width: 900px) 40vw, 100vw', width: 1283, height: 1600,
-    srcset: [['Wingsonblock4x5-640w.jpg', 640], ['Wingsonblock4x5-960w.jpg', 960], ['Wingsonblock4x5-1920w.jpg', 1283]],
+    width: 1283, height: 1600, src: '/assets/chicken-wings.jpg',
+  },
+  dessert: {
+    alt: 'Fried dough dusted with sugar',
+    width: 1920, height: 1179, src: '/assets/fried-dough.jpg',
   },
 };
 
@@ -125,7 +126,10 @@ const menuNav = () => `<ul class="menu-tabs">${menu.categories.map(c =>
 
 const menuSections = () => menu.categories.map(c => `
 <section class="menu-section" id="${slug(c.name)}" aria-labelledby="${slug(c.name)}-title">
-  <h2 class="menu-section-title" id="${slug(c.name)}-title">${esc(c.name)}</h2>
+  <div class="menu-section-heading">
+    <h2 class="menu-section-title" id="${slug(c.name)}-title">${esc(c.name)}</h2>
+    ${c.name === 'Pit sandwiches' ? photo('sandwich') : c.name === 'Desserts and drinks' ? photo('dessert') : ''}
+  </div>
   <ul class="menu-items">${c.items.map(i => `
     <li class="menu-item">
       <div class="menu-item-text"><h3>${esc(i.name)}</h3>${i.description ? `<p>${esc(i.description)}</p>` : ''}</div>
@@ -149,10 +153,9 @@ const categoryIndex = () => `<ul class="category-index">${menu.categories.map(c 
   <li><a href="/menu/#${slug(c.name)}"><span class="ci-name">${esc(c.name)}</span><span class="ci-note">${esc(CATEGORY_NOTES[c.name] || `${c.items.slice(0, 3).map(i => i.name).join(', ')} and more`)}</span>${icon.arrow}</a></li>`).join('')}</ul>`;
 
 const photo = key => {
-  if (!SHOW_PHOTOS || !PHOTOS[key]) return '';
+  if (!PHOTOS[key]) return '';
   const p = PHOTOS[key];
-  const set = p.srcset.map(([file, w]) => `${CDN}${file} ${w}w`).join(', ');
-  return `<figure class="photo photo-${key}"><img src="${CDN}${p.srcset[1][0]}" srcset="${set}" sizes="${p.sizes}" width="${p.width}" height="${p.height}" alt="${esc(p.alt)}" loading="lazy" decoding="async"></figure>`;
+  return `<figure class="photo photo-${key}"><img src="${p.src}" width="${p.width}" height="${p.height}" alt="${esc(p.alt)}" loading="${key === 'hero' ? 'eager' : 'lazy'}"${key === 'hero' ? ' fetchpriority="high"' : ''} decoding="async"></figure>`;
 };
 
 const tokens = current => ({
@@ -174,10 +177,10 @@ const tokens = current => ({
   'icon-phone': () => icon.phone,
   'icon-pin': () => icon.pin,
   'icon-bag': () => icon.bag,
-  'photo-band': () => photo('band'),
+  'photo-hero': () => photo('hero'),
   'photo-catering': () => photo('catering'),
   'photo-wings': () => photo('wings'),
-  'photos-on': () => (SHOW_PHOTOS ? 'has-photos' : 'no-photos'),
+  'photos-on': () => 'has-photos',
 });
 
 const partials = () => ({
