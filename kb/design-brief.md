@@ -19,6 +19,30 @@ Adopted traits: centered desktop wordmark with compact horizontal navigation; a 
 
 No reference branding, text, photos, code, awards or restaurant claims are copied. No template purchase or licensed source acquisition is claimed. Business asset use is authorized; the previous photo hold is superseded. Actual local images are required in the rendered pages, not merely in the private library. No competitor imagery is used.
 
+### Component and flow mapping
+
+The pre-existing feature decision is a static restaurant presentation with outbound integrations. The following October 17 corrective fit check records what was actually observed; it is not a claim of a pre-build reference packet.
+
+| Selected component | Inspected reference and scope | Adaptation |
+| --- | --- | --- |
+| Homepage, shared navigation and menu entry | Hawksmoor home and /menus/, desktop and mobile: compact centered brand, clear menu destination, primary/secondary action hierarchy, large food/venue media, ruled utility sections | Five separate Charcoal pages, Order/Menu action pair, one-location information and actual meal photograph. No booking or location-selector implementation. |
+| Readable menu | Hawksmoor /menus/ supplies orderly menu navigation and hierarchy; chargrill.com/our-menu supplies the restaurant's actual items/prices | Existing HTML categories and 43 menu items, with sandwich and fried-dough photos. No claim that Hawksmoor demonstrates our exact category-scrolling implementation. |
+| Catering information and telephone action | Official chargrill.com/team supplies the catering offering and contact intent; existing restaurant telephone is verified against ChowNow store information | Catering details, real chicken-salad image and direct call action. No unconnected inquiry form or booking flow. |
+| Order online | https://order.chownow.com/order/5108/locations/6625 is the actual selected integration, inspected through its restaurant/store-information state | Keep the exact external restaurant link and a visible phone fallback. The after-hours check showed ordering unavailable; checkout was not verified or recreated. Hawksmoor is not an ordering-flow reference. |
+| Gift-card balance | https://squareup.com/gift/9K1R5WDH8FYKR/check-balance rendered Charcoal Grill's card/PIN/no-PIN form at mobile size | Direct external balance link. No local card collection or gift-card purchase flow. |
+| Visit/contact | Official business contact details and ChowNow Hours & Map identify the same address/phone | Published restaurant hours, telephone and address-based Google Maps destination. No reservation system. |
+
+### Concrete visual blueprint and comparison
+
+Hawksmoor was selected for observed composition, not its reputation: a compact light header with a centered wordmark, confident hero hierarchy, paired actions, restrained borders and orderly lower sections. The inspected desktop 1440x900 and mobile 390x844 captures are retained privately. The corrected live build was compared at those same CSS viewports after the photos were added.
+
+- **Grid and spacing:** align the desktop header, hero copy and utility content to one centered content width; maintain generous hero breathing room, consistent gutters and thin section dividers. The current hero uses two equal columns and the utility strip three columns; mobile uses 20px side gutters and stacked content.
+- **Type and actions:** one normal-width Manrope family, moderate heading scale, readable line height and consistent button height. Preserve the reference's clear primary/secondary action relationship; use Charcoal's warm red instead of the reference's gold. Keep visible focus, active navigation and mobile disclosure states.
+- **Media:** the reference's full-width venue video is intentionally adapted to a 4:3 desktop meal crop and 2:1 mobile meal crop because the actual source is a 1203x609 carryout photograph. This preserves readable copy and shows branded packaging without inventing a venue/video. Menu category images remain subordinate to item text; Catering uses the real salad bowls; About preserves the wings portrait.
+- **Mobile:** compact header, stacked full-width actions, separate food image and useful business information. Retain complete hours rows and separated drink-price groups from Sol's review. No decorative numbering, competing font families or imported competitor assets.
+
+The earlier Sol live review covered all five pages and mobile navigation; Astra resolved its hours and price-spacing findings. Astra's subsequent photo/reference comparison found no clipping, image-load failures or unexplained hierarchy drift in the changed layouts. This is a bounded correction of the existing design, not a new Claude implementation or a claim that Sol reviewed the later-added photos.
+
 ## Accepted corrections
 The original condensed Anton headings and oversized Fraunces italic accents were rejected. The required researched template step must remain part of a fast workflow. Both are corrected in the current source; do not restore that font pairing or claim the initial build was template-based.
 

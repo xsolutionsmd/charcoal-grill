@@ -90,20 +90,21 @@
     },
     "build": {
       "status": "done",
-      "recorded": "2026-10-18T00:44:01.342217+00:00",
+      "recorded": "2026-10-18T00:50:33.747983+00:00",
       "evidence": [
         "Initial Claude frontend; Astra reference-driven correction after user typography rejection and Sol live review. Vite check passes; desktop home and 360px Visit render/containment verified; live release validation tracked privately.",
         "Astra template fit explicitly maps sourced business facts, five actual reference photos/rights and static integration scope; b62f996 rendered bundle unchanged by this evidence-only update. Build checks and targeted visuals passed.",
-        "All five collected photos included as local assets using the existing inspected Hawksmoor reference. Build/source checks pass; desktop/mobile hero, menu photos, catering and About composition inspected with zero overflow. Previous Sol fixes retained."
+        "All five collected photos included as local assets using the existing inspected Hawksmoor reference. Build/source checks pass; desktop/mobile hero, menu photos, catering and About composition inspected with zero overflow. Previous Sol fixes retained.",
+        "All five business photos rendered; build/source checks pass; desktop/mobile reference comparison and image crops checked. Existing Sol fixes retained; exact external provider states recorded with phone fallback."
       ],
       "inputs_sha256": {
-        "kb/features.md": "61ab19684b758b96983c0939afe862ccdfe72af8b1f5058afc7c28ed63027c23",
-        "kb/design-brief.md": "70d31f369ee6f699439c8fc6afdfc3188c4b6920211258ac41b78c606b751d63"
+        "kb/features.md": "348c79951221b16bae1755e940373f16aaa28bf29aa0b869a6c57d8f7dad35cf",
+        "kb/design-brief.md": "19a1eb4dd4495ca6a5c96c14edd91ab9d631604e12c266cedfb8c6a13a59cbd3"
       }
     },
     "deploy": {
       "status": "pending"
     }
   },
-  "updated": "2026-10-18T00:44:01.342702+00:00"
+  "updated": "2026-10-18T00:50:33.749013+00:00"
 }
