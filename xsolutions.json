@@ -70,17 +70,34 @@
       "status": "pending"
     },
     "infra": {
-      "status": "pending"
+      "status": "done",
+      "recorded": "2026-10-17T23:56:35.532184+00:00",
+      "evidence": [
+        "Public xsolutionsmd/charcoal-grill with main, derek-dev and abdul-dev, restricted environments and protected main; six initial Actions runs passed, 2026-10-17.",
+        "All three Oracle environments serve d12c3befac31b9dbf8f15341d1759468c49b53d8 using distinct public GHCR packages and digest-pinned updater states."
+      ]
     },
     "template": {
-      "status": "pending"
+      "status": "done",
+      "recorded": "2026-10-18T00:04:35.713886+00:00",
+      "evidence": [
+        "https://thehawksmoor.com/ and /menus/ inspected desktop/mobile; Bludso and Lewis compared; bounded reference mapping in kb/design-brief.md."
+      ]
     },
     "build": {
-      "status": "pending"
+      "status": "done",
+      "recorded": "2026-10-18T00:05:25.067053+00:00",
+      "evidence": [
+        "Initial Claude frontend; Astra reference-driven correction after user typography rejection and Sol live review. Vite check passes; desktop home and 360px Visit render/containment verified; live release validation tracked privately."
+      ],
+      "inputs_sha256": {
+        "kb/features.md": "61ab19684b758b96983c0939afe862ccdfe72af8b1f5058afc7c28ed63027c23",
+        "kb/design-brief.md": "d071a949581911f4299240e2e76765de1aaf1ef80c4100321111443c980c4e44"
+      }
     },
     "deploy": {
       "status": "pending"
     }
   },
-  "updated": "2026-10-17T23:42:47.193444+00:00"
+  "updated": "2026-10-18T00:05:25.068230+00:00"
 }

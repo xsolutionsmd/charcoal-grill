@@ -1,2 +1,14 @@
 # Validation
-Initial implementation in progress. Live verification and the focused post-publication visual review will be recorded here after execution. No unperformed check is claimed.
+Validated 2026-10-17. First live revision: `d12c3befac31b9dbf8f15341d1759468c49b53d8`.
+
+- Production ARM64 build ran the Vite build and source checks, then an isolated production Compose rehearsal passed all five page URLs, local assets, noindex, exact integration links, health, no-store revision and HTTP 404 behavior.
+- The same smoke suite passed production, Derek preview and Abdul preview over HTTPS. All five production pages also passed browser direct-load and refresh checks; back and forward worked. At 390px every page had zero document overflow and correct page/active navigation state.
+- Initial frontend desktop/mobile visual inspection covered home, menu and catering, and navigation across the five pages. Sol then inspected every live page at 1440x900 and 390x844, plus 360px checks. It found one minor issue: wrapping day/time ranges inside the narrow Visit hours card. Astra stacked complete day/time rows below 480px and checked the containing card at 360px.
+- Actual ChowNow restaurant/location and Square gift-card balance pages were opened and matched the business. No order, payment or form was submitted.
+- The development launcher config preserves the application's build-time HTML transforms. Its live menu and health endpoint were checked.
+- Initial Application CI and Oracle workflows passed on main, derek-dev and abdul-dev. Each environment uses a distinct digest-pinned public GHCR image, an independent container and an active updater timer. Main requires a PR with both strict container checks.
+- The shared gateway received only additive Charcoal host rules, under the shared lock, followed by validation and reload. All 18 baseline sibling containers retained their IDs, images and mounts at the initial checkpoint.
+
+The initial custom typography was rejected. Astra subsequently researched Bludso's, Lewis Barbecue and Hawksmoor, inspected the selected Hawksmoor reference at desktop/mobile, and adapted its compact header, restrained type scale, hero/action hierarchy and quieter section structure. All six authored pages now use Manrope; the oversized condensed/italic treatment is removed. The hero menu board became a separate menu-highlights section. Local Vite build/source checks passed; actual rendered desktop home and 360px Visit checks passed. Live corrective release receipts remain in the private handoff.
+
+Scope limits: noindex demo; photos disabled pending reuse permission; current prices, holiday hours and catering details still require restaurant confirmation before official launch. Social media collection was bounded. The initial Stitch attempt timed out; the original build did not use a template. Subsequent researched reference selection and its scope are documented in kb/design-brief.md.

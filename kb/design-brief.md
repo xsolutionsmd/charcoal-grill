@@ -1,56 +1,26 @@
-# Design brief
-
+﻿# Design brief
 
 ## Visitor job and primary action
-Visitors need to see the food, understand the menu, call to order, arrange catering and find the restaurant.
-
-## Content plan
-Home / Menu / Catering / About / Visit, each a distinct page URL. Use the official menu facts and working external integrations. No invented story.
+See the menu, order through the existing restaurant provider, arrange catering by phone, and find the Parkville restaurant. Home / Menu / Catering / About / Visit remain distinct URLs.
 
 ## Template site
-<!-- xs:template -->
-<!-- Chosen premium same-industry website: URL, why it won, runners-up with URLs,
-traits adopted (structure, section order, navigation, type scale, spacing, motion),
-and which collected media fills each role (hero video, wide shots, portraits, menu photos...). -->
+Selected reference: https://thehawksmoor.com/ and https://thehawksmoor.com/menus/ — inspected rendered desktop and mobile on 2026-10-17. Its restrained typographic scale, compact navigation, single primary hero message with two actions, ruled utility strip, and orderly menu/group-dining content fit this restaurant’s menu/order/catering visitor tasks. Adapt its visual structure and hierarchy to one neighborhood restaurant; retain Charcoal Grill’s sourced facts and real integrations.
 
-2026-10-17 speed-first build: no premium template was inspected. The one bounded Stitch
-attempt (project 16838008763735468507) timed out with no screen and was not retried. The
-initial frontend therefore follows the direction below; template selection is still open.
+Runners-up: https://www.bludsosbbq.com/ and https://www.lewisbarbecue.com/ were researched and rendered on desktop. They match barbecue and catering closely, but their decorative/western or condensed typography repeats the rejected direction. Bounded speed-first comparison; no exhaustive mobile audit of rejected references. Taor and Urban Webflow demos were also inspected but not selected as the primary restaurant reference.
 
-## Visual direction
-2026-10-17 initial frontend (Claude), photo-free by default:
-- Concept: neighborhood pit-beef signage meets an editorial menu board. Charcoal `#171513`,
-  cream `#f3ebdd`/paper `#faf5ec`, signage red `#c42b1c` (`#ff6a4d` on dark).
-- Type: Anton (condensed uppercase display), Fraunces italic (red accent lines), Public Sans
-  (body). Loaded from Google Fonts and allowlisted in `app/xs-check.json`.
-- Composition: a large headline with a dark "From the pit" board that shows real published
-  prices (no photo needed); rule-separated info strip; typographic category index; dark
-  catering band; inner pages share a headline hero. No cards, ordinals or counters.
-- Menu: rendered at build time from `app/menu-data.json` with a sticky, scrollable section bar
-  that highlights the section in view. Prices are shown as label + amount pairs.
-- Motion: one short entrance rise on headings, plus hover underline and arrow nudges. No looping
-  motion. All of it is disabled under reduced motion.
-- Photos: `SHOW_PHOTOS` in `app/vite.config.js` stays false until reuse is cleared. Slots
-  are ready for the official-site pit beef meal, Caesar salads and wings shots. The fried
-  dough image was rejected because it looks like stock photography.
+Adopted traits: centered desktop wordmark with compact horizontal navigation; a full-width dark hero with a moderate 60px maximum heading, short description and order/menu actions; a light information strip; quieter menu highlights outside the hero; consistent heading scale and generous readable line heights; thin separators; restrained motion. One Manrope family supplies editable, normal-width typography without copying the reference’s proprietary fonts or code. Mobile uses a compact wordmark/disclosure and stacked actions. The existing readable 43-item menu remains HTML, with horizontal category navigation.
 
-## Accepted decisions and corrections
-2026-10-17: speed first; distinct primary page URLs; no decorative numbering; authentic imagery only when cleared. Sol rendered visual review follows first live + GitHub setup, then Astra repairs.
+No reference branding, text, photos, code, awards or restaurant claims are copied. No template purchase or licensed source acquisition is claimed. Official photo references remain private pending permission; the photo-free hero is the intentional adaptation of the reference’s media-led composition. Once cleared, the official pit-beef meal image is the wide-food candidate, with salads for catering and wings for a supporting menu image. No competitor imagery will be used.
 
-## X Solutions standing design rules
+## Accepted corrections
+The original condensed Anton headings and oversized Fraunces italic accents were rejected. The required researched template step must remain part of a fast workflow. Both are corrected in the current source; do not restore that font pairing or claim the initial build was template-based.
 
-- Thoughtful, distinctive, professional and clean: strong typography, authentic
-  photography, smooth restrained motion, enjoyable interaction; necessary copy only.
-- No decorative numbering: no section ordinals, numbered badges, photo prefixes or
-  counters such as 01 / 02. Factual numbers (prices, phone, dates) are fine.
-- Choose photos for composition, quality, real work shown, variety and recency across
-  the whole history, not just the newest posts. Never present generated or competitor
-  work as the client's.
-- Check every form control against its containing card (including padding) on narrow
-  phones, with enlarged text and focus states; page-level overflow checks are not enough.
-- Native inputs, keyboard access, visible focus, reduced-motion support and a pause
-  control for ongoing decorative movement.
-- Consistent SVG arrows/icons (no text glyphs or emoji arrows). No visitor-facing demo,
-  preview or "functionality" banners and no repeated disclaimers.
-- Optimise without degrading the experience: right-sized media, lazy loading, no
-  needless browser work.
+Initial history: Claude built the frontend. A bounded Stitch attempt (project 16838008763735468507) timed out without a usable screen. Initial Oracle launch preceded GitHub setup by explicit instruction. After launch and GitHub setup, Sol inspected all pages live; Astra owns post-review visual corrections. No second Stitch cycle is needed for this correction.
+
+## Standing rules
+- Professional, clean composition with consistent type, necessary copy and subtle motion.
+- No decorative numbering, numbered badges or counters.
+- Distinct primary page URLs, active navigation, keyboard access, visible focus and reduced-motion support.
+- Check narrow controls inside their cards; the Visit hours card stacks complete day/time rows below 480px.
+- Authentic imagery only with clearance; no invented restaurant photography or claims.
+- SVG arrows/icons; no visitor-facing demo banners or repeated disclaimers. No local unconnected forms.
