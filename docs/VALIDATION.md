@@ -1,5 +1,9 @@
 # Validation
 
+## Header logo — October 18, 2026
+
+Local Vite build/content checks pass. Rendered header checked at 1280 × 800 and 360 × 800: loaded transparent logo, correct centered desktop placement, contained mobile logo/order/menu controls and no horizontal overflow. Mobile disclosure opens, Escape closes it and restores toggle focus. Explicit image dimensions reserve space; existing reduced-motion CSS covers the opacity transition. Runtime reduced-motion emulation is not claimed. Hosted release and independent review results follow in the update handoff.
+
 ## Current structural release
 
 - Vite production build/source checks and public-content scan pass. Required GitHub checks exercise the deployable container, health, exact revision, five routes, eight local assets, verified external targets, noindex and HTTP404 behavior.

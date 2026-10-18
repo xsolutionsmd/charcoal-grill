@@ -1,5 +1,11 @@
 # Handoff
 
+## Header logo update — October 18, 2026
+
+Abdul requested the official website logo in place of the centered header text, without the 35th-anniversary element. The shared header now uses a transparent, cleaned green/red logo on all pages, with responsive dimensions, an accessible home link and restrained hover fade. Source and transformation are recorded in media.md. The accepted page layout and menu content are preserved.
+
+Scope: abdul-dev and its preview only. Local production build/content checks and rendered desktop (1280px) / narrow mobile (360px) header checks passed, including menu open/Escape/focus restoration and overflow. Hosted release and independent live review are the next acceptance steps.
+
 Charcoal Grill has a reference-led, static multipage website with Home, Menu, Catering, About and Visit at separate URLs. It uses all five approved business photos, a restrained Marcellus/Manrope type system and green/red brand cues from its packaging. The homepage, centered menu paper and editorial pages follow the inspected Hawksmoor structure.
 
 - Production: https://charcoal-grill.xsolutionsmd.com/
