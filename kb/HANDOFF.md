@@ -1,5 +1,28 @@
 # Handoff
 
+## Current menu-photo expansion - October 18, 2026
+
+Derek requested real photos for every menu item and expanded collection beyond ordering apps. The [Derek menu preview](https://charcoal-grill-derek-dev.xsolutionsmd.com/menu/) is live with **32 of 44 entries illustrated**, with **12 remaining photo gaps** and **45 originals** in the private library. The independently reviewed application revision is `9465fbb1be1bb17afbeecbdb07374cfea7662b39`. The final documentation commit retains that exact application/runtime tree; its deployed environment revision is tracked separately in private release receipts. This is partial coverage, not all-item completion. Menu names/prices/descriptions are unchanged against `5f76655604e7b3052e46233f2abf5912d457c1de`. Production/main and Abdul remain at `6a6964b5f35b3c6517df452be2dde460042e4fdc` and are outside this change.
+
+The new matching method follows Derek's request for educated image/description matches. Ham identity is supported by the official caption, but its historical toppings differ. Pulled pork is a medium-confidence visual inference; chicken remains possible and the caption does not identify the protein. The index and [photo provenance](menu-photos.md) distinguish these from confirmed matches. A short menu note explains historical specials and catering portions.
+
+Build/public-source/asset checks pass (39 built files; 45 original hashes verified). Live checks passed all five routes, 33 local assets, health/version, noindex, HTTP404 and integration link targets. Oracle release and application CI succeeded at the reviewed application revision. Astra accepted Sol's full five-route, 29-photo desktop/mobile review at `21bef5e`, then its focused live recheck of all three new associations at `9465fbb`: **PASS, no actionable fixes remain**. Both inspected 1440px desktop and 390/360px phone widths and applicable interactions; eight screenshots support the focused recheck. These were resized Chromium views, not physical-device certification. The unchanged ChowNow iframe does not forward Escape from inside it; visible Close and host-focused Escape work. No real orders, calls, customer messages or payments were submitted.
+
+Existing first-live and previous 34-original Slack receipts remain private and must not be duplicated. The current complete 45-original package includes the 44-row menu index (32 illustrated), CSV, gallery and provenance; it supersedes the undelivered 43-image package. Final package/URL delivery and exact read-back receipts are tracked privately after the documentation-only Derek release, avoiding a second documentation release. Newer XS gates arrived after the original accepted site/infrastructure; scoped ownership explicitly documents this legacy mismatch. No retrospective reconstruction or infrastructure completion is claimed. Workflow: server-first (default), resumed from completed infrastructure and accepted live reviews. Next: coordinator inspects and accepts the exclusive Sol final verification, Slack/media receipt and cleanup checkpoint; do not rebuild or repeat research/review.
+
+## Standing asset permission - October 17, 2026
+
+Derek confirms owner permission for all gathered business photos/assets across sources and beyond the shortlist, for this requested website in every environment including production. Use suitable assets without asking again per photo, source or environment. Older reference-only, public-unverified and permission-pending notes are superseded as approval gates; retain provenance and accurate identity/content descriptions. Pass this confirmation to every delegated agent. Keep the full original archive private and use optimized copies in the site.
+
+This note corrects authorization records; it does not claim a new website deployment or that unused photos have already been placed.
+
+## Menu asset expansion — October 17, 2026
+
+The separate asset-library follow-up collected 29 original 1920×1440 images associated with ChowNow's menu cards, deduplicating repeated Popular Items entries. The library now contains 34 images including the five existing website photos. `kb/media.md` has source coverage; the private library/package has `menu-items.json`, `menu-items.csv` and `menu-gallery.html` with exact item/source/file mapping. Some ordering images are packaging, graphics or group photos, not independently verified photographs of every selectable dish. Five ChowNow cards have no image. The matching Uber Eats listing is closed on that platform and exposes no menu; an exact DoorDash listing was not found in bounded searches/directories.
+
+The expanded ZIP was delivered once to the existing team Slack channel and read back; its checksum/file/permalink receipt is in the private delivery records. This was assets-only: the new images are available for future menu work, and the live site remains at the previously verified revision. No rebuild or deployment is implied by this collection or newer workflow checks.
+
+
 Charcoal Grill has a reference-led, static multipage website with Home, Menu, Catering, About and Visit at separate URLs. It uses all five approved business photos, a restrained Marcellus/Manrope type system and green/red brand cues from its packaging. The homepage, centered menu paper and editorial pages follow the inspected Hawksmoor structure.
 
 - Production: https://charcoal-grill.xsolutionsmd.com/

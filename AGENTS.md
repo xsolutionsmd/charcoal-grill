@@ -41,14 +41,12 @@ refreshes the generated status block.
 
 - It is public. Commit only sourced public business facts, the design brief and
   project state. Pricing, quotes, lead/sales status, private contact details,
-  credentials and raw media of unclear permission stay out (they live in X
+  credentials and the full raw media archive stay out (they live in X
   Solutions' private workspace or Slack). Run `xs_company.py check-public` before
   pushing when the skills are installed.
 - Every factual claim on the site must trace to `kb/sources.md`. Unknowns stay
   unknown; never invent reviews, ratings, prices, credentials or service areas.
-- Media: the site is built for the business, so all of the business's collected
-  media may be used in every environment (see `kb/media.md`). The original media library was delivered to
-  Abdul on Slack.
+- Media: Derek confirms owner permission for all gathered business photos/assets across sources and beyond the shortlist, for this requested website in every environment including production. Use suitable assets without asking again per photo, source or environment. Older reference-only, public-unverified and permission-pending notes are superseded as approval gates; retain provenance and accurate identity/content descriptions. Pass this confirmation to every delegated agent. Keep the full original archive private and use optimized copies in the site. See `kb/media.md` for source records and library delivery.
 - Previews are `noindex` and use test data and test integrations only.
 - Keep `kb/`, `AGENTS.md`, `CLAUDE.md` and `xsolutions.json` out of the production
   image (`.dockerignore`).
@@ -89,3 +87,15 @@ production images. Separate local, container, CI and live evidence in the valida
 ## Branch contract
 
 This repository has no shared dev branch. Long-lived branches: `main` (production) and `derek-dev`, `abdul-dev` (personal preview environments). Wherever this guide says dev, use your own preview branch; promote with a reviewed PR from it into main, then merge main back into each preview branch.
+
+## Current website design route
+
+Derek's latest instruction supersedes the earlier Stitch route: do not use Stitch,
+including attempts or fallbacks. Follow the canonical XS workflow in
+`~/.codex/skills/xs-website/SKILL.md`, especially
+`~/.codex/skills/xs-website/references/coordinator.md`, and its reconstruction/delivery
+references. The main coordinator owns ordered acceptance and completion updates.
+The repository's reference-design skill and `docs/DESIGN_WORKFLOW.md` provide the
+local implementation route; preserve task-specific role restrictions and existing
+branch, endpoint and release boundaries. Keep separate pages where requested,
+no decorative numbering, and the already confirmed business-asset authorization.

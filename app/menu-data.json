@@ -9,32 +9,86 @@
         {
           "name": "Pit beef",
           "price": "Regular 10.79 / Colossal 15.99",
-          "description": "Prepared to your preference"
+          "description": "Prepared to your preference",
+          "image": {
+            "src": "/assets/menu/pit-beef.webp",
+            "alt": "Pit beef sandwich",
+            "width": 640,
+            "height": 480
+          }
         },
         {
           "name": "Roma Italian sausage",
           "price": "Regular 9.79 / Colossal 14.29",
-          "description": "Peppers and onions"
+          "description": "Peppers and onions",
+          "image": {
+            "src": "/assets/menu/italian-sausage.jpg",
+            "alt": "Grilled sausages and onions",
+            "width": 640,
+            "height": 640,
+            "crop": [
+              0,
+              80,
+              640,
+              480
+            ]
+          }
         },
         {
           "name": "Ham",
           "price": "Regular 10.19 / Colossal 14.59",
-          "description": "Barbecued ham"
+          "description": "Barbecued ham",
+          "image": {
+            "src": "/assets/menu/ham-sandwich.jpg",
+            "alt": "Ham sandwich from Charcoal Grill's specials",
+            "width": 1080,
+            "height": 1080,
+            "crop": [
+              0,
+              170,
+              1080,
+              810
+            ]
+          }
         },
         {
           "name": "Turkey",
           "price": "Regular 10.19 / Colossal 15.59",
-          "description": "Smoked and grilled"
+          "description": "Smoked and grilled",
+          "image": {
+            "src": "/assets/menu/turkey.jpg",
+            "alt": "Pit turkey sandwich with lettuce and tomato",
+            "width": 750,
+            "height": 1000
+          }
         },
         {
           "name": "Chicken filet",
           "price": "Regular 8.79 / Colossal 12.99",
-          "description": "Skinless chicken filet"
+          "description": "Skinless chicken filet",
+          "image": {
+            "src": "/assets/menu/chicken-filet.webp",
+            "alt": "Grilled chicken filet sandwich",
+            "width": 640,
+            "height": 480
+          }
         },
         {
           "name": "Chesapeake chicken",
           "price": "Regular 8.79 / Colossal 12.99",
-          "description": "Old Bay, sourdough, mayo, lettuce and tomato"
+          "description": "Old Bay, sourdough, mayo, lettuce and tomato",
+          "image": {
+            "src": "/assets/menu/chesapeake-chicken.jpg",
+            "alt": "Chesapeake chicken sandwich on a kaiser roll",
+            "width": 1024,
+            "height": 1024,
+            "crop": [
+              20,
+              40,
+              960,
+              720
+            ]
+          }
         },
         {
           "name": "Combo",
@@ -44,7 +98,13 @@
         {
           "name": "Club sandwich",
           "price": "9.69",
-          "description": "Ham, turkey, Swiss, bacon, sourdough"
+          "description": "Ham, turkey, Swiss, bacon, sourdough",
+          "image": {
+            "src": "/assets/menu/club-sandwich.webp",
+            "alt": "Club sandwich on toasted bread",
+            "width": 640,
+            "height": 480
+          }
         },
         {
           "name": "Chicken cordon bleu",
@@ -59,7 +119,19 @@
         {
           "name": "Pork BBQ",
           "price": "9.19",
-          "description": "Slaw add-on available"
+          "description": "Slaw add-on available",
+          "image": {
+            "src": "/assets/menu/pulled-barbecue.jpg",
+            "alt": "Sauced pulled barbecue from Charcoal Grill's catering spread",
+            "width": 720,
+            "height": 960,
+            "crop": [
+              20,
+              470,
+              540,
+              405
+            ]
+          }
         },
         {
           "name": "Chopped beef BBQ",
@@ -69,7 +141,19 @@
         {
           "name": "Grilled Angus beef dog",
           "price": "3.59",
-          "description": "Choptop option 4.89"
+          "description": "Choptop option 4.89",
+          "image": {
+            "src": "/assets/menu/hot-dog.jpg",
+            "alt": "Grilled hot dog from the ordering menu",
+            "width": 1920,
+            "height": 1440,
+            "crop": [
+              650,
+              300,
+              720,
+              540
+            ]
+          }
         }
       ]
     },
@@ -79,7 +163,13 @@
         {
           "name": "Ocean Fries",
           "price": "Junior 4.69 / Regular 5.89 / Jumbo 8.79 / Colossal 15.99",
-          "description": "Fresh-cut; cooked in peanut oil"
+          "description": "Fresh-cut; cooked in peanut oil",
+          "image": {
+            "src": "/assets/menu/ocean-fries.webp",
+            "alt": "Fresh-cut Ocean Fries",
+            "width": 640,
+            "height": 480
+          }
         },
         {
           "name": "Red potato salad",
@@ -89,12 +179,36 @@
         {
           "name": "Cole slaw",
           "price": "Half pint 3.49",
-          "description": ""
+          "description": "",
+          "image": {
+            "src": "/assets/menu/salads.jpg",
+            "alt": "Cole slaw from the ordering-menu salad photo",
+            "width": 1920,
+            "height": 1440,
+            "crop": [
+              340,
+              600,
+              1120,
+              840
+            ]
+          }
         },
         {
           "name": "Macaroni salad",
           "price": "Half pint 3.49",
-          "description": ""
+          "description": "",
+          "image": {
+            "src": "/assets/menu/salads.jpg",
+            "alt": "Macaroni salad from the ordering-menu salad photo",
+            "width": 1920,
+            "height": 1440,
+            "crop": [
+              510,
+              0,
+              600,
+              450
+            ]
+          }
         },
         {
           "name": "Beans",
@@ -114,22 +228,52 @@
         {
           "name": "Wings, boneless wings or buffalo shrimp",
           "price": "10 pieces 15.99 / 20 pieces 29.99 / 30 pieces 44.99",
-          "description": "Celery and ranch or bleu cheese"
+          "description": "Celery and ranch or bleu cheese",
+          "image": {
+            "src": "/assets/menu/wings.webp",
+            "alt": "Buffalo wings with celery and dip; wings shown",
+            "width": 640,
+            "height": 480
+          }
         },
         {
           "name": "Half rack baby back ribs",
           "price": "Regular 13.49 / Dinner 17.79",
-          "description": "Regular or hickory BBQ"
+          "description": "Regular or hickory BBQ",
+          "image": {
+            "src": "/assets/menu/half-rack-ribs.webp",
+            "alt": "Baby back ribs on the grill",
+            "width": 640,
+            "height": 480
+          }
         },
         {
           "name": "Full rack baby back ribs",
           "price": "Regular 18.79 / Dinner 22.99",
-          "description": "Regular or hickory BBQ"
+          "description": "Regular or hickory BBQ",
+          "image": {
+            "src": "/assets/menu/full-rack-ribs.webp",
+            "alt": "Barbecued baby back ribs on the grill",
+            "width": 640,
+            "height": 480
+          }
         },
         {
           "name": "Half chicken",
           "price": "Regular 14.39 / Dinner 18.79",
-          "description": ""
+          "description": "",
+          "image": {
+            "src": "/assets/menu/half-chicken.jpg",
+            "alt": "Chicken cooking on the Charcoal Grill",
+            "width": 1200,
+            "height": 1600,
+            "crop": [
+              0,
+              450,
+              1200,
+              900
+            ]
+          }
         },
         {
           "name": "Half ribs and chicken dinner",
@@ -144,7 +288,13 @@
         {
           "name": "Grilled chicken Caesar salad",
           "price": "Small 12.99 / Large 16.99",
-          "description": ""
+          "description": "",
+          "image": {
+            "src": "/assets/menu/chicken-caesar.webp",
+            "alt": "Grilled chicken Caesar salad",
+            "width": 640,
+            "height": 480
+          }
         },
         {
           "name": "Side Caesar salad",
@@ -154,7 +304,13 @@
         {
           "name": "Chicken noodle soup",
           "price": "Half pint 3.99 / Pint 6.99",
-          "description": ""
+          "description": "",
+          "image": {
+            "src": "/assets/menu/chicken-noodle-soup.webp",
+            "alt": "Chicken noodle soup with vegetables",
+            "width": 640,
+            "height": 480
+          }
         },
         {
           "name": "Shrimp and corn chowder",
@@ -164,27 +320,87 @@
         {
           "name": "Poppers",
           "price": "6.99",
-          "description": "Popper jam"
+          "description": "Popper jam",
+          "image": {
+            "src": "/assets/menu/poppers.jpg",
+            "alt": "Breaded poppers with dipping sauce",
+            "width": 1024,
+            "height": 1024,
+            "crop": [
+              0,
+              100,
+              1024,
+              768
+            ]
+          }
         },
         {
           "name": "Chicken tenders",
           "price": "6.99",
-          "description": "Honey mustard or BBQ"
+          "description": "Honey mustard or BBQ",
+          "image": {
+            "src": "/assets/menu/chicken-tenders.jpg",
+            "alt": "Chicken tenders",
+            "width": 1000,
+            "height": 750,
+            "crop": [
+              0,
+              330,
+              560,
+              420
+            ]
+          }
         },
         {
           "name": "Onion rings",
           "price": "5.99",
-          "description": ""
+          "description": "",
+          "image": {
+            "src": "/assets/menu/appetizers.jpg",
+            "alt": "Onion rings from the ordering-menu appetizer photograph",
+            "width": 1920,
+            "height": 1440,
+            "crop": [
+              1370,
+              20,
+              540,
+              405
+            ]
+          }
         },
         {
           "name": "Mozzarella sticks",
           "price": "6.99",
-          "description": ""
+          "description": "",
+          "image": {
+            "src": "/assets/menu/appetizers.jpg",
+            "alt": "Mozzarella sticks from the ordering-menu appetizer photograph",
+            "width": 1920,
+            "height": 1440,
+            "crop": [
+              410,
+              1010,
+              560,
+              420
+            ]
+          }
         },
         {
           "name": "Fried pickles",
           "price": "6.99",
-          "description": "Bistro sauce"
+          "description": "Bistro sauce",
+          "image": {
+            "src": "/assets/menu/fried-pickles.jpg",
+            "alt": "Breaded pickle spears on the appetizer sampler",
+            "width": 612,
+            "height": 612,
+            "crop": [
+              170,
+              70,
+              240,
+              180
+            ]
+          }
         }
       ]
     },
@@ -194,22 +410,64 @@
         {
           "name": "Jr. beef, ham or turkey meal",
           "price": "9.49",
-          "description": "Kiddie fries or apple sauce"
+          "description": "Kiddie fries or apple sauce",
+          "image": {
+            "src": "/assets/menu/turkey.jpg",
+            "alt": "Pit turkey sandwich with lettuce and tomato",
+            "width": 750,
+            "height": 1000
+          }
         },
         {
           "name": "Hot dog meal",
           "price": "8.49",
-          "description": "Kiddie fries or apple sauce"
+          "description": "Kiddie fries or apple sauce",
+          "image": {
+            "src": "/assets/menu/hot-dog.jpg",
+            "alt": "Grilled hot dog; the main item in the hot dog meal",
+            "width": 1920,
+            "height": 1440,
+            "crop": [
+              650,
+              300,
+              720,
+              540
+            ]
+          }
         },
         {
           "name": "Tender meal",
           "price": "9.49",
-          "description": "Kiddie fries or apple sauce"
+          "description": "Kiddie fries or apple sauce",
+          "image": {
+            "src": "/assets/menu/chicken-tenders.jpg",
+            "alt": "Chicken tenders",
+            "width": 1000,
+            "height": 750,
+            "crop": [
+              0,
+              330,
+              560,
+              420
+            ]
+          }
         },
         {
           "name": "Jr. pulled pork or chicken BBQ meal",
           "price": "9.49",
-          "description": "Kiddie fries or apple sauce"
+          "description": "Kiddie fries or apple sauce",
+          "image": {
+            "src": "/assets/menu/pulled-barbecue.jpg",
+            "alt": "Sauced pulled barbecue from Charcoal Grill's catering spread",
+            "width": 720,
+            "height": 960,
+            "crop": [
+              20,
+              470,
+              540,
+              405
+            ]
+          }
         }
       ]
     },
@@ -219,27 +477,69 @@
         {
           "name": "Fried cheesecake",
           "price": "5.99",
-          "description": "Cinnamon and sugar"
+          "description": "Cinnamon and sugar",
+          "image": {
+            "src": "/assets/menu/fried-cheesecake.jpg",
+            "alt": "Fried cheesecake in a takeaway tray",
+            "width": 1080,
+            "height": 1920,
+            "crop": [
+              0,
+              650,
+              1080,
+              810
+            ]
+          }
         },
         {
           "name": "Fried dough",
           "price": "3.49",
-          "description": "Ask about toppings"
+          "description": "Ask about toppings",
+          "image": {
+            "src": "/assets/fried-dough.jpg",
+            "alt": "Fried dough dusted with sugar",
+            "width": 1920,
+            "height": 1179
+          }
         },
         {
           "name": "Funnel cake fries",
           "price": "6.79",
-          "description": "16 oz."
+          "description": "16 oz.",
+          "image": {
+            "src": "/assets/menu/funnel-cake-fries.webp",
+            "alt": "Sugar-dusted funnel cake fries with dip",
+            "width": 640,
+            "height": 480
+          }
         },
         {
           "name": "Soft drinks",
           "price": "20 oz. 2.49 / 32 oz. 2.99",
-          "description": ""
+          "description": "",
+          "image": {
+            "src": "/assets/menu/soft-drink.jpg",
+            "alt": "Iced drink in a Charcoal Grill cup",
+            "width": 1203,
+            "height": 1500,
+            "crop": [
+              0,
+              500,
+              480,
+              360
+            ]
+          }
         },
         {
           "name": "Fresh-squeezed lemonade",
           "price": "20 oz. 2.99 / 32 oz. 3.99",
-          "description": ""
+          "description": "",
+          "image": {
+            "src": "/assets/menu/lemonade.webp",
+            "alt": "Lemonade with lemon slices",
+            "width": 640,
+            "height": 480
+          }
         },
         {
           "name": "Arnold Palmer",

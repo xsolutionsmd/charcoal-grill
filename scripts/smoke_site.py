@@ -24,6 +24,8 @@ class Page(HTMLParser):
             self.forms += 1
         if tag in ("img", "script") and a.get("src", "").startswith("/"):
             self.assets.add(a["src"])
+        if tag == "image" and a.get("href", "").startswith("/"):
+            self.assets.add(a["href"])
         if tag == "link" and a.get("href", "").startswith("/"):
             self.assets.add(a["href"])
         if tag == "meta" and a.get("name") == "robots":
