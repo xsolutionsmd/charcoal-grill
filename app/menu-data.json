@@ -37,7 +37,19 @@
         {
           "name": "Ham",
           "price": "Regular 10.19 / Colossal 14.59",
-          "description": "Barbecued ham"
+          "description": "Barbecued ham",
+          "image": {
+            "src": "/assets/menu/ham-sandwich.jpg",
+            "alt": "Ham sandwich from Charcoal Grill's specials",
+            "width": 1080,
+            "height": 1080,
+            "crop": [
+              0,
+              170,
+              1080,
+              810
+            ]
+          }
         },
         {
           "name": "Turkey",
@@ -107,7 +119,19 @@
         {
           "name": "Pork BBQ",
           "price": "9.19",
-          "description": "Slaw add-on available"
+          "description": "Slaw add-on available",
+          "image": {
+            "src": "/assets/menu/pulled-barbecue.jpg",
+            "alt": "Sauced pulled barbecue from Charcoal Grill's catering spread",
+            "width": 720,
+            "height": 960,
+            "crop": [
+              20,
+              470,
+              540,
+              405
+            ]
+          }
         },
         {
           "name": "Chopped beef BBQ",
@@ -431,7 +455,19 @@
         {
           "name": "Jr. pulled pork or chicken BBQ meal",
           "price": "9.49",
-          "description": "Kiddie fries or apple sauce"
+          "description": "Kiddie fries or apple sauce",
+          "image": {
+            "src": "/assets/menu/pulled-barbecue.jpg",
+            "alt": "Sauced pulled barbecue from Charcoal Grill's catering spread",
+            "width": 720,
+            "height": 960,
+            "crop": [
+              20,
+              470,
+              540,
+              405
+            ]
+          }
         }
       ]
     },
