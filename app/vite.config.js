@@ -143,10 +143,15 @@ const menuItem = i => {
     <li class="${cls}">
       ${copy}
     </li>`;
-  const { src, alt, width, height } = i.image;
+  const { src, alt, width, height, crop } = i.image;
+  // A viewport can show an identifiable dish in a shared source photograph.
+  // The original image bytes remain unchanged and shared between menu entries.
+  const media = crop
+    ? `<svg class="menu-photo" role="img" aria-label="${esc(alt)}" width="640" height="480" viewBox="${crop.join(' ')}" overflow="hidden"><image href="${esc(src)}" width="${width}" height="${height}"/></svg>`
+    : `<img class="menu-photo" src="${esc(src)}" width="${width}" height="${height}" alt="${esc(alt)}" loading="lazy" decoding="async">`;
   return `
     <li class="${cls}">
-      <img class="menu-photo" src="${esc(src)}" width="${width}" height="${height}" alt="${esc(alt)}" loading="lazy" decoding="async">
+      ${media}
       <div class="menu-copy">${copy}</div>
     </li>`;
 };

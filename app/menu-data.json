@@ -30,7 +30,13 @@
         {
           "name": "Turkey",
           "price": "Regular 10.19 / Colossal 15.59",
-          "description": "Smoked and grilled"
+          "description": "Smoked and grilled",
+          "image": {
+            "src": "/assets/menu/turkey.jpg",
+            "alt": "Pit turkey sandwich with lettuce and tomato",
+            "width": 750,
+            "height": 1000
+          }
         },
         {
           "name": "Chicken filet",
@@ -87,7 +93,19 @@
         {
           "name": "Grilled Angus beef dog",
           "price": "3.59",
-          "description": "Choptop option 4.89"
+          "description": "Choptop option 4.89",
+          "image": {
+            "src": "/assets/menu/hot-dog.jpg",
+            "alt": "Grilled hot dog from the ordering menu",
+            "width": 1920,
+            "height": 1440,
+            "crop": [
+              650,
+              300,
+              720,
+              540
+            ]
+          }
         }
       ]
     },
@@ -113,12 +131,36 @@
         {
           "name": "Cole slaw",
           "price": "Half pint 3.49",
-          "description": ""
+          "description": "",
+          "image": {
+            "src": "/assets/menu/salads.jpg",
+            "alt": "Cole slaw from the ordering-menu salad photo",
+            "width": 1920,
+            "height": 1440,
+            "crop": [
+              340,
+              600,
+              1120,
+              840
+            ]
+          }
         },
         {
           "name": "Macaroni salad",
           "price": "Half pint 3.49",
-          "description": ""
+          "description": "",
+          "image": {
+            "src": "/assets/menu/salads.jpg",
+            "alt": "Macaroni salad from the ordering-menu salad photo",
+            "width": 1920,
+            "height": 1440,
+            "crop": [
+              510,
+              0,
+              600,
+              450
+            ]
+          }
         },
         {
           "name": "Beans",
@@ -223,17 +265,53 @@
         {
           "name": "Chicken tenders",
           "price": "6.99",
-          "description": "Honey mustard or BBQ"
+          "description": "Honey mustard or BBQ",
+          "image": {
+            "src": "/assets/menu/chicken-tenders.jpg",
+            "alt": "Chicken tenders",
+            "width": 1000,
+            "height": 750,
+            "crop": [
+              0,
+              330,
+              560,
+              420
+            ]
+          }
         },
         {
           "name": "Onion rings",
           "price": "5.99",
-          "description": ""
+          "description": "",
+          "image": {
+            "src": "/assets/menu/appetizers.jpg",
+            "alt": "Onion rings from the ordering-menu appetizer photograph",
+            "width": 1920,
+            "height": 1440,
+            "crop": [
+              1370,
+              20,
+              540,
+              405
+            ]
+          }
         },
         {
           "name": "Mozzarella sticks",
           "price": "6.99",
-          "description": ""
+          "description": "",
+          "image": {
+            "src": "/assets/menu/appetizers.jpg",
+            "alt": "Mozzarella sticks from the ordering-menu appetizer photograph",
+            "width": 1920,
+            "height": 1440,
+            "crop": [
+              410,
+              1010,
+              560,
+              420
+            ]
+          }
         },
         {
           "name": "Fried pickles",
@@ -248,17 +326,47 @@
         {
           "name": "Jr. beef, ham or turkey meal",
           "price": "9.49",
-          "description": "Kiddie fries or apple sauce"
+          "description": "Kiddie fries or apple sauce",
+          "image": {
+            "src": "/assets/menu/turkey.jpg",
+            "alt": "Pit turkey sandwich with lettuce and tomato",
+            "width": 750,
+            "height": 1000
+          }
         },
         {
           "name": "Hot dog meal",
           "price": "8.49",
-          "description": "Kiddie fries or apple sauce"
+          "description": "Kiddie fries or apple sauce",
+          "image": {
+            "src": "/assets/menu/hot-dog.jpg",
+            "alt": "Grilled hot dog; the main item in the hot dog meal",
+            "width": 1920,
+            "height": 1440,
+            "crop": [
+              650,
+              300,
+              720,
+              540
+            ]
+          }
         },
         {
           "name": "Tender meal",
           "price": "9.49",
-          "description": "Kiddie fries or apple sauce"
+          "description": "Kiddie fries or apple sauce",
+          "image": {
+            "src": "/assets/menu/chicken-tenders.jpg",
+            "alt": "Chicken tenders",
+            "width": 1000,
+            "height": 750,
+            "crop": [
+              0,
+              330,
+              560,
+              420
+            ]
+          }
         },
         {
           "name": "Jr. pulled pork or chicken BBQ meal",
