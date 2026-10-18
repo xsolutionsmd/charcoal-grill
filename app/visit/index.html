@@ -6,54 +6,51 @@
     <meta name="robots" content="noindex, nofollow">
     <title>Visit · Charcoal Grill</title>
     <meta name="description" content="Charcoal Grill, 8535 Old Harford Road, Parkville, MD 21234. Open Tuesday to Saturday 11am to 8pm, Sunday 11am to 7pm, closed Monday.">
-    <meta name="theme-color" content="#171513">
+    <meta name="theme-color" content="#f7f3ea">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Manrope:wght@400;500;600;700&display=swap">
     <script type="module" src="/src/main.js"></script>
   </head>
-  <body class="{{photos-on}}">
+  <body>
     {{header}}
     <main id="main">
-      <section class="page-hero" aria-labelledby="page-title">
-        <div class="wrap page-hero-grid">
-          <h1 id="page-title" class="display reveal">Visit <span class="accent">us</span></h1>
-          <div class="page-hero-copy reveal reveal-late">
-            <p class="lede">On the corner of Putt Hill Avenue and Old Harford Road, next to Liquor Pump.</p>
+      <section class="feature feature-visit" aria-labelledby="page-title">
+        {{photo-visit}}
+        <div class="feature-copy">
+          <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span aria-current="page">Visit</span></nav>
+          <h1 id="page-title" class="page-title">Visit Charcoal Grill</h1>
+          <p class="find-address">8535 Old Harford Road<br>Parkville, MD 21234</p>
+          <p>On the corner of Putt Hill Avenue and Old Harford Road, next to Liquor Pump.</p>
+          <div class="actions">
+            <a class="btn btn-red" href="{{maps}}">{{icon-pin}}Get directions</a>
+            <a class="btn btn-outline" href="{{phone}}">{{icon-phone}}Call {{phone-label}}</a>
           </div>
-        </div>
-      </section>
-
-      <section class="section section-tight" aria-label="Address, hours and contact">
-        <div class="wrap visit-grid">
-          <div class="visit-card visit-card-dark">
-            <h2 class="kicker kicker-light">Address</h2>
-            <p class="visit-address">8535 Old Harford Road<br>Parkville, MD 21234</p>
-            <div class="actions">
-              <a class="btn btn-red" href="{{maps}}">{{icon-pin}}Get directions</a>
-              <a class="btn btn-line-light" href="{{phone}}">{{icon-phone}}Call {{phone-label}}</a>
-            </div>
-          </div>
-          <div class="visit-card">
-            <h2 class="kicker">Hours</h2>
+          <div class="hours-block">
+            <h2 class="label">Hours</h2>
             {{hours}}
-            <p class="muted small">Holiday hours may differ. Call ahead to confirm.</p>
+            <p class="hours-note">Holiday hours may differ. Call ahead to confirm.</p>
           </div>
         </div>
       </section>
 
-      <section class="section section-flush" aria-label="Ordering and gift cards">
-        <div class="wrap duo">
-          <div class="duo-item">
-            <h2 class="kicker">Order ahead</h2>
-            <p class="info-big">Order online, or call the restaurant.</p>
-            <a class="text-link" href="{{order}}">Order online{{icon-arrow}}</a>
+      <section class="trio" aria-label="Ordering, gift cards and contact">
+        <div class="wrap trio-grid">
+          <div class="trio-item">
+            <h2>Order ahead</h2>
+            <p>Order online for pickup, or call the restaurant.</p>
+            {{order-link}}
           </div>
-          <div class="duo-item">
-            <h2 class="kicker">Gift cards</h2>
-            <p class="info-big">Available in the restaurant.</p>
+          <div class="trio-item">
+            <h2>Gift cards</h2>
+            <p>Available in the restaurant.</p>
             <a class="text-link" href="{{gift-balance}}">Check a balance{{icon-arrow}}</a>
+          </div>
+          <div class="trio-item">
+            <h2>Contact and jobs</h2>
+            <p>Questions, or interested in working with us?</p>
+            <a class="text-link" href="{{contact}}">Contact &amp; job applications{{icon-arrow}}</a>
           </div>
         </div>
       </section>

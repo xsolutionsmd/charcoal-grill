@@ -1,5 +1,14 @@
 ﻿# Design brief
 
+## Current correction ? close structural and functional adaptation
+Derek rejected revision 9d2b4d7 as insufficiently matching the selected reference. The earlier split homepage hero and sidebar-menu treatment below are historical, not the accepted endpoint. Current blueprint: full-width photographic hero with overlaid message/action pair; compact ruled secondary page links; concise editorial introduction; real-food discovery cards; alternating image/copy sections; centered white menu-paper layout and category selection with query URLs/history. Catering follows the reference's editorial split opening. The persistent primary action opens the actual ChowNow ordering interface using its official integration.
+
+The theme comes from the business's own green/red branded packaging, charcoal and warm cream. A restrained normal Roman display family paired with readable Manrope body is permitted (maximum two families); no condensed Anton, oversized Fraunces italics or decorative numbering. Use all five real business photos. Menu items/prices remain sourced, and no booking, newsletter or inquiry backend is invented. Astra supplied fresh desktop/mobile captures and concrete component/type/spacing/flow notes to Claude BEFORE this visual rebuild; private packet reference-blueprint-r3.md holds the exact evidence.
+
+Inspected component mapping: Hawksmoor home supplies the full-bleed hero, action hierarchy, utility navigation and alternating editorial sections; https://thehawksmoor.com/locations/airstreet/food/menu/ supplies centered menu selection and readable menu-paper rows; https://thehawksmoor.com/private-dining/ supplies the catering editorial split/lead-action pattern. The reference booking action maps to real ChowNow ordering, group enquiry to a real phone call, and location selection to a single useful Visit page. No unseen ordering capability is attributed to Hawksmoor. ChowNow's official script behavior is sourced separately in S8; its restaurant menu and scheduling chooser were rendered.
+
+Desktop comparison target1440x900, mobile390x844 with narrow360px containment checks. Check actual image crops and text contrast, coherent typography, native menu selection/history and overlay order flow, including close/return states. A fresh live Sol review is required because this is a substantive structural change.
+
 ## Visitor job and primary action
 See the menu, order through the existing restaurant provider, arrange catering by phone, and find the Parkville restaurant. Home / Menu / Catering / About / Visit remain distinct URLs.
 
@@ -32,7 +41,7 @@ The pre-existing feature decision is a static restaurant presentation with outbo
 | Gift-card balance | https://squareup.com/gift/9K1R5WDH8FYKR/check-balance rendered Charcoal Grill's card/PIN/no-PIN form at mobile size | Direct external balance link. No local card collection or gift-card purchase flow. |
 | Visit/contact | Official business contact details and ChowNow Hours & Map identify the same address/phone | Published restaurant hours, telephone and address-based Google Maps destination. No reservation system. |
 
-### Concrete visual blueprint and comparison
+### Prior correction record ? superseded by current structural blueprint
 
 Hawksmoor was selected for observed composition, not its reputation: a compact light header with a centered wordmark, confident hero hierarchy, paired actions, restrained borders and orderly lower sections. The inspected desktop 1440x900 and mobile 390x844 captures are retained privately. The corrected live build was compared at those same CSS viewports after the photos were added.
 

@@ -1,4 +1,6 @@
 # Validation
+Current structural rebuild: Vite production build and source checks pass. Locally inspected full-width Home hero, mobile overlay navigation, centered menu and active category state. Category selection updates the query URL, hides other categories and survives explicit browser reload. Mobile navigation opens and selecting Menu navigates to its separate URL and closes the overlay. The official ChowNow SDK deliberately links out on HTTP; its HTTPS desktop overlay remains a live-preview check. Fresh Sol desktop/mobile review is pending for this substantive redesign. Prior observations below describe earlier revisions.
+
 Validated 2026-10-17. First live revision: `d12c3befac31b9dbf8f15341d1759468c49b53d8`.
 
 - Production ARM64 build ran the Vite build and source checks, then an isolated production Compose rehearsal passed all five page URLs, local assets, noindex, exact integration links, health, no-store revision and HTTP 404 behavior.
