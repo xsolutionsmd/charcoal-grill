@@ -65,10 +65,22 @@
     },
     "assets": {
       "status": "done",
-      "recorded": "2026-10-18T00:44:01.176717+00:00",
+      "recorded": "2026-10-18T04:33:23.570419+00:00",
       "evidence": [
-        "Five official business photos verified, shortlisted, selected and mapped to rendered pages; bounded source coverage recorded."
-      ]
+        "Five official business photos verified, shortlisted, selected and mapped to rendered pages; bounded source coverage recorded.",
+        "Standalone assets follow-up accepted: Astra downloaded/decoded/hash-verified 29 ChowNow originals, deduplicated popular entries, inspected all images; specialist verified Uber closed listing and bounded DoorDash gap. 34-image library, item index/gallery and package checksum verified. Website code/release unchanged.",
+        "Bounded Grubhub and DoorDash Chrome research accepted; no matching listing found. Does not establish photo coverage for all44 menu entries. Remaining photo gaps are recorded separately.",
+        "Bounded Facebook/Instagram/Google research accepted; seven selected photos, one inferior tender duplicate excluded. Yelp added two originals. Library43 images; menu29/44. Fifteen exact photo gaps and source limits retained."
+      ],
+      "workflow_version": 2,
+      "owner": "astra-xhigh",
+      "task_id": "charcoal-facebook-google-menu-photos-r3-20261018",
+      "prerequisites": {
+        "identity": null
+      },
+      "fallback_task_id": null,
+      "quota_evidence": null,
+      "quota_exhausted": false
     },
     "delivery": {
       "status": "pending"
@@ -109,5 +121,22 @@
       "status": "pending"
     }
   },
-  "updated": "2026-10-18T02:50:22.890921+00:00"
+  "updated": "2026-10-18T04:56:27.936361+00:00",
+  "scoped_updates": {
+    "menu_photos_2026_10_18": {
+      "branch": "derek-dev",
+      "scope": "Photo expansion and final documentation only; production/main and Abdul unchanged",
+      "reviewed_application_revision": "9465fbb1be1bb17afbeecbdb07374cfea7662b39",
+      "illustrated_entries": 32,
+      "menu_entries": 44,
+      "library_originals": 45,
+      "unmapped_entries": 12,
+      "review": "Astra accepted full five-route live review at 21bef5e and focused three-association recheck at 9465fbb: PASS, no actionable fixes",
+      "validation": "39-file build, public scan, 45 original hashes, five routes/33 local assets/health/version/noindex/404/link targets PASS; application Actions success",
+      "identity_limits": "Historical ham special; medium-confidence likely-pork catering crop, with chicken a competing interpretation and protein not caption-confirmed; junior portion/sides not established",
+      "delivery": "Final package and URL delivery/read-back receipts tracked privately after documentation-only release",
+      "workflow_note": "Legacy site/infrastructure precede newer gates; scoped final task does not assert historical gate completion",
+      "next_action": "Coordinator inspect and accept final private handoff/checkpoint"
+    }
+  }
 }

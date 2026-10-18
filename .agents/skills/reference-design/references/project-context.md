@@ -4,4 +4,4 @@ Read the repository README, AGENTS.md, requirements, accepted design system and 
 
 For new App Launchpad applications, implement the requested product alongside its lifecycle. Use the selected source directory and existing Docker/CI/host contract. Browser applications apply this design workflow; command-line/backend-only applications need no visual design pass. Keep tooling and captured references out of runtime images.
 
-If Stitch is available and the project requires it, use the installed skills. Otherwise implement from the selected reference and explicit design decisions with the existing stack. Preserve a named project-specific generator choice; explain an unavailable dependency before using a fallback.
+For business websites follow the current XS route in the adjacent reference-design skill and `~/.codex/skills/xs-website/SKILL.md`. No Stitch attempts or fallbacks. Preserve the existing stack and task-specific endpoint/release boundaries; report actual REA/browser evidence and gaps honestly.

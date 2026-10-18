@@ -1,5 +1,15 @@
 # Validation
 
+## Current Derek menu-photo release - October 18, 2026
+
+The accepted application revision is `9465fbb1be1bb17afbeecbdb07374cfea7662b39` on `derek-dev`: **32/44 entries illustrated, 45 originals in the private library, 12 photo gaps**. All 44 menu names, prices and descriptions compare equal to `5f76655604e7b3052e46233f2abf5912d457c1de` after excluding image metadata. The 39-file production build, public-content scan, original/package hash checks and five-route/33-local-asset/health/version/noindex/HTTP404/integration-link smoke checks pass. [Oracle release](https://github.com/xsolutionsmd/charcoal-grill/actions/runs/39098144691) and [application CI](https://github.com/xsolutionsmd/charcoal-grill/actions/runs/39098144709) succeeded at that application revision.
+
+Astra accepted Sol's independent full live review at `21bef5ec143d46d34354a07767a71e00018f05d1`: all five routes, 29 illustrated entries/six categories, 1440px desktop and 390/360px phone views, category URL/history, navigation/focus, FAQ, ordering handoff and sampled transitions passed. The subsequent focused live recheck at `9465fbb` passed the three new associations, 32/44 count, image decoding, row-level containment, category/history and mobile navigation at the same widths. Eight selected screenshots are retained privately. No actionable fixes remain; the final documentation commit changes no application/runtime source. Final environment SHA, Actions and HTTP convergence evidence are recorded privately alongside the separately retained reviewed application SHA.
+
+The ham image is an official historical special, with current toppings/recipe unconfirmed. The catering crop is a medium-confidence likely-pork inference used for Pork BBQ and the junior BBQ entry; chicken remains a competing interpretation and the caption does not identify the protein. It does not establish sandwich, included sides or junior portion. See [provenance and all 12 gaps](../kb/menu-photos.md). No substitute image is used to conceal a missing dish photo.
+
+Provider limit: Escape inside the cross-origin ChowNow iframe is not forwarded to the host; visible Close and host-focused Escape work. Cart/checkout/payment and real Square lookup remain unverified. No real orders, calls, customer messages or payments were made. Resized Chromium does not certify physical devices, Safari or screen-reader behavior. Source collection remains bounded. Main/production and Abdul remain `6a6964b5f35b3c6517df452be2dde460042e4fdc`; only Derek's environment receives this expansion. Final media/Slack read-back and cleanup receipts stay private. Earlier records below describe their historical revisions, not current pending work.
+
 ## Current structural release
 
 - Vite production build/source checks and public-content scan pass. Required GitHub checks exercise the deployable container, health, exact revision, five routes, eight local assets, verified external targets, noindex and HTTP404 behavior.
@@ -18,7 +28,7 @@ The chosen Hawksmoor reference is documented in kb/template-blueprint.md. Its ne
 
 T3 inspections use desktop Chrome with CSS viewport changes; no physical-device certification. Reduced-motion runtime preference could not be emulated; provider checkout/payment, card validation and success/error states beyond the selected integration handoff remain untested. Current prices, holiday hours and catering details require restaurant confirmation before official launch. All environments remain noindex demos; chargrill.com was not changed.
 
-## Derek menu-photo expansion ? October 18, 2026
+## Earlier local menu-photo checks - October 18, 2026
 
 Astra prepared 22 illustrated entries from verified source matches, including two captioned Yelp originals and SVG viewport crops of identifiable dishes. The existing 44 names, prices and descriptions compare equal to revision 5f76655 after removing image metadata. `npm --prefix app run check` passes (30 built files). Desktop 1440?900 and mobile 390?844 crop/layout inspection passed, with no page overflow. Local HTTP smoke coverage now includes SVG image references. These are local checks; the next deployed revision and independent live recheck are recorded separately in the private release receipt. Unpictured items remain explicit in kb/menu-photos.md.
 
