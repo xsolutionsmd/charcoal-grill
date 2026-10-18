@@ -9,7 +9,13 @@
         {
           "name": "Pit beef",
           "price": "Regular 10.79 / Colossal 15.99",
-          "description": "Prepared to your preference"
+          "description": "Prepared to your preference",
+          "image": {
+            "src": "/assets/menu/pit-beef.webp",
+            "alt": "Pit beef sandwich",
+            "width": 640,
+            "height": 480
+          }
         },
         {
           "name": "Roma Italian sausage",
@@ -29,7 +35,13 @@
         {
           "name": "Chicken filet",
           "price": "Regular 8.79 / Colossal 12.99",
-          "description": "Skinless chicken filet"
+          "description": "Skinless chicken filet",
+          "image": {
+            "src": "/assets/menu/chicken-filet.webp",
+            "alt": "Grilled chicken filet sandwich",
+            "width": 640,
+            "height": 480
+          }
         },
         {
           "name": "Chesapeake chicken",
@@ -44,7 +56,13 @@
         {
           "name": "Club sandwich",
           "price": "9.69",
-          "description": "Ham, turkey, Swiss, bacon, sourdough"
+          "description": "Ham, turkey, Swiss, bacon, sourdough",
+          "image": {
+            "src": "/assets/menu/club-sandwich.webp",
+            "alt": "Club sandwich on toasted bread",
+            "width": 640,
+            "height": 480
+          }
         },
         {
           "name": "Chicken cordon bleu",
@@ -79,7 +97,13 @@
         {
           "name": "Ocean Fries",
           "price": "Junior 4.69 / Regular 5.89 / Jumbo 8.79 / Colossal 15.99",
-          "description": "Fresh-cut; cooked in peanut oil"
+          "description": "Fresh-cut; cooked in peanut oil",
+          "image": {
+            "src": "/assets/menu/ocean-fries.webp",
+            "alt": "Fresh-cut Ocean Fries",
+            "width": 640,
+            "height": 480
+          }
         },
         {
           "name": "Red potato salad",
@@ -114,17 +138,35 @@
         {
           "name": "Wings, boneless wings or buffalo shrimp",
           "price": "10 pieces 15.99 / 20 pieces 29.99 / 30 pieces 44.99",
-          "description": "Celery and ranch or bleu cheese"
+          "description": "Celery and ranch or bleu cheese",
+          "image": {
+            "src": "/assets/menu/wings.webp",
+            "alt": "Buffalo wings with celery and dip; wings shown",
+            "width": 640,
+            "height": 480
+          }
         },
         {
           "name": "Half rack baby back ribs",
           "price": "Regular 13.49 / Dinner 17.79",
-          "description": "Regular or hickory BBQ"
+          "description": "Regular or hickory BBQ",
+          "image": {
+            "src": "/assets/menu/half-rack-ribs.webp",
+            "alt": "Baby back ribs on the grill",
+            "width": 640,
+            "height": 480
+          }
         },
         {
           "name": "Full rack baby back ribs",
           "price": "Regular 18.79 / Dinner 22.99",
-          "description": "Regular or hickory BBQ"
+          "description": "Regular or hickory BBQ",
+          "image": {
+            "src": "/assets/menu/full-rack-ribs.webp",
+            "alt": "Barbecued baby back ribs on the grill",
+            "width": 640,
+            "height": 480
+          }
         },
         {
           "name": "Half chicken",
@@ -144,7 +186,13 @@
         {
           "name": "Grilled chicken Caesar salad",
           "price": "Small 12.99 / Large 16.99",
-          "description": ""
+          "description": "",
+          "image": {
+            "src": "/assets/menu/chicken-caesar.webp",
+            "alt": "Grilled chicken Caesar salad",
+            "width": 640,
+            "height": 480
+          }
         },
         {
           "name": "Side Caesar salad",
@@ -154,7 +202,13 @@
         {
           "name": "Chicken noodle soup",
           "price": "Half pint 3.99 / Pint 6.99",
-          "description": ""
+          "description": "",
+          "image": {
+            "src": "/assets/menu/chicken-noodle-soup.webp",
+            "alt": "Chicken noodle soup with vegetables",
+            "width": 640,
+            "height": 480
+          }
         },
         {
           "name": "Shrimp and corn chowder",
@@ -224,12 +278,24 @@
         {
           "name": "Fried dough",
           "price": "3.49",
-          "description": "Ask about toppings"
+          "description": "Ask about toppings",
+          "image": {
+            "src": "/assets/fried-dough.jpg",
+            "alt": "Fried dough dusted with sugar",
+            "width": 1920,
+            "height": 1179
+          }
         },
         {
           "name": "Funnel cake fries",
           "price": "6.79",
-          "description": "16 oz."
+          "description": "16 oz.",
+          "image": {
+            "src": "/assets/menu/funnel-cake-fries.webp",
+            "alt": "Sugar-dusted funnel cake fries with dip",
+            "width": 640,
+            "height": 480
+          }
         },
         {
           "name": "Soft drinks",
@@ -239,7 +305,13 @@
         {
           "name": "Fresh-squeezed lemonade",
           "price": "20 oz. 2.99 / 32 oz. 3.99",
-          "description": ""
+          "description": "",
+          "image": {
+            "src": "/assets/menu/lemonade.webp",
+            "alt": "Lemonade with lemon slices",
+            "width": 640,
+            "height": 480
+          }
         },
         {
           "name": "Arnold Palmer",
