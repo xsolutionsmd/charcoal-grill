@@ -23,6 +23,10 @@ const PHOTOS = {
     alt: 'Pit beef sandwich with tomato and onion beside a cup of fresh-cut fries and barbecue sauce',
     width: 1203, height: 609, src: '/assets/pit-beef-meal.jpg',
   },
+  fries: {
+    alt: 'Fresh-cut Ocean Fries in a Charcoal Grill cup',
+    width: 1203, height: 609, src: '/assets/pit-beef-meal.jpg',
+  },
   sandwich: {
     alt: 'Charcoal Grill pit beef sandwich with lettuce, tomato and onion',
     width: 942, height: 890, src: '/assets/pit-beef-sandwich.jpg',
@@ -48,13 +52,17 @@ const icon = {
   arrow: '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
   phone: '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 3.5h2.6l1.5 4-1.9 1.3a11 11 0 0 0 6.4 6.4l1.3-1.9 4 1.5v2.6a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>',
   pin: '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21s-6.5-6.2-6.5-11.2a6.5 6.5 0 0 1 13 0C18.5 14.8 12 21 12 21Z" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="9.8" r="2.3" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>',
-  bag: '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 8h14l-1 12H6L5 8Zm4 0V6.5a3 3 0 0 1 6 0V8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>',
-  grate: '<svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><rect width="40" height="40" rx="10" fill="currentColor"/><path d="M11 25.5 17.5 13M17.5 29 26 13M24 29l5.5-10.5" stroke="#f3ebdd" stroke-width="3.2" stroke-linecap="round"/></svg>',
-  menu: '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path class="i-open" d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path class="i-close" d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>',
+  plus: '<svg class="icon faq-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M12 5v14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>',
+  menu: '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path class="i-open" d="M3.5 7h17M3.5 12h17M3.5 17h17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path class="i-close" d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>',
 };
 
 const NAV = [['/menu/', 'Menu'], ['/catering/', 'Catering'], ['/about/', 'About'], ['/visit/', 'Visit']];
 const HOURS = [['Tuesday – Saturday', '11am – 8pm'], ['Sunday', '11am – 7pm'], ['Monday', 'Closed']];
+
+// Every ordering action keeps the provider URL as a working no-script fallback and
+// carries the class the official ChowNow integration attaches to.
+const orderLink = (cls, label = 'Order online') =>
+  `<a class="${cls} chownow-order-online" href="${SITE.order}">${label}</a>`;
 
 const navLinks = current => NAV.map(([href, label]) =>
   `<li><a href="${href}"${href === current ? ' aria-current="page"' : ''}>${label}</a></li>`).join('');
@@ -62,22 +70,23 @@ const navLinks = current => NAV.map(([href, label]) =>
 const header = current => `
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header" data-header>
-  <div class="wrap header-bar">
-    <a class="brand" href="/"${current === '/' ? ' aria-current="page"' : ''}>${icon.grate}<span class="brand-word">Charcoal <em>Grill</em></span></a>
+  <div class="header-bar">
     <nav class="primary-nav" aria-label="Primary"><ul>${navLinks(current)}</ul></nav>
+    <a class="wordmark" href="/"${current === '/' ? ' aria-current="page"' : ''}>Charcoal Grill</a>
     <div class="header-actions">
       <a class="header-phone" href="${SITE.phone}">${icon.phone}<span>${SITE.phoneLabel}</span></a>
-      <a class="btn btn-red btn-sm header-order" href="${SITE.order}">Order online</a>
+      ${orderLink('btn btn-outline btn-sm header-order', 'Order<span class="order-long"> online</span>')}
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-toggle>${icon.menu}<span class="sr-only">Menu</span></button>
     </div>
   </div>
   <div class="mobile-menu" id="mobile-menu" data-mobile-menu hidden>
-    <nav class="wrap" aria-label="Mobile">
-      <ul class="mobile-links">${current === '/' ? '<li><a href="/" aria-current="page">Home</a></li>' : '<li><a href="/">Home</a></li>'}${navLinks(current)}</ul>
+    <nav class="mobile-nav" aria-label="Mobile">
+      <ul class="mobile-links"><li><a href="/"${current === '/' ? ' aria-current="page"' : ''}>Home</a></li>${navLinks(current)}</ul>
       <div class="mobile-actions">
-        <a class="btn btn-red" href="${SITE.order}">${icon.bag}Order online</a>
-        <a class="btn btn-line-light" href="${SITE.phone}">${icon.phone}Call ${SITE.phoneLabel}</a>
+        ${orderLink('btn btn-red btn-block')}
+        <a class="btn btn-outline btn-block" href="${SITE.phone}">${icon.phone}Call ${SITE.phoneLabel}</a>
       </div>
+      <p class="mobile-meta">8535 Old Harford Road, Parkville<br>Tue – Sat 11am – 8pm · Sun 11am – 7pm · Mon closed</p>
     </nav>
   </div>
 </header>`;
@@ -88,9 +97,8 @@ const footer = () => `
 <footer class="site-footer">
   <div class="wrap footer-grid">
     <div class="footer-brand">
-      <a class="brand brand-light" href="/">${icon.grate}<span class="brand-word">Charcoal <em>Grill</em></span></a>
+      <a class="wordmark wordmark-light" href="/">Charcoal Grill</a>
       <p>Pit sandwiches and barbecue on Old Harford Road.</p>
-      <a class="btn btn-red" href="${SITE.order}">${icon.bag}Order online</a>
     </div>
     <div>
       <h2 class="footer-head">Find us</h2>
@@ -104,11 +112,11 @@ const footer = () => `
       <h2 class="footer-head">Explore</h2>
       <ul class="footer-links">${NAV.map(([href, label]) => `<li><a href="${href}">${label}</a></li>`).join('')}
         <li><a href="${SITE.giftBalance}">Gift card balance</a></li>
-        <li><a href="${SITE.contact}">Contact &amp; job applications</a></li>
+        <li><a href="${SITE.contact}">Contact &amp; jobs</a></li>
       </ul>
     </nav>
   </div>
-  <div class="wrap footer-base"><p>Charcoal Grill · 8535 Old Harford Road, Parkville, Maryland</p></div>
+  <div class="wrap footer-base"><p>Charcoal Grill · 8535 Old Harford Road, Parkville, Maryland</p>${orderLink('text-link text-link-light')}</div>
 </footer>`;
 
 // "Regular 10.79 / Colossal 15.99" -> [{label: 'Regular', amount: '10.79'}, ...]
@@ -119,55 +127,63 @@ const priceOptions = price => price.split(' / ').map(part => {
 const priceHtml = price => `<span class="prices">${priceOptions(price).map(({ label, amount }) =>
   `<span class="price">${label ? `<span class="price-label">${esc(label)}</span>` : ''}${amount ? `<span class="price-amount">$${amount}</span>` : ''}</span>`).join('')}</span>`;
 
-const findItem = name => menu.categories.flatMap(c => c.items).find(i => i.name === name);
+// Category selection: real links that root's menu module enhances in place.
+const menuFilter = () => `<ul class="menu-filter-list">
+  <li><a href="/menu/" data-menu-filter="all" aria-current="true">Full menu</a></li>${menu.categories.map(c => `
+  <li><a href="/menu/?category=${slug(c.name)}" data-menu-filter="${slug(c.name)}">${esc(c.name)}</a></li>`).join('')}
+</ul>`;
 
-const menuNav = () => `<ul class="menu-tabs">${menu.categories.map(c =>
-  `<li><a href="#${slug(c.name)}">${esc(c.name)}</a></li>`).join('')}</ul>`;
+const CATEGORY_PHOTOS = { 'Pit sandwiches': 'sandwich', 'Desserts and drinks': 'dessert' };
 
-const menuSections = () => menu.categories.map(c => `
-<section class="menu-section" id="${slug(c.name)}" aria-labelledby="${slug(c.name)}-title">
-  <div class="menu-section-heading">
-    <h2 class="menu-section-title" id="${slug(c.name)}-title">${esc(c.name)}</h2>
-    ${c.name === 'Pit sandwiches' ? photo('sandwich') : c.name === 'Desserts and drinks' ? photo('dessert') : ''}
-  </div>
+const menuSections = () => menu.categories.map(c => {
+  const id = slug(c.name);
+  const art = CATEGORY_PHOTOS[c.name];
+  return `
+<section class="menu-section" id="${id}" data-menu-category="${id}" aria-labelledby="${id}-title">
+  <h2 class="menu-section-title" id="${id}-title">${esc(c.name)}</h2>
+  ${art ? photo(art, `menu-art menu-art-${art}`) : ''}
   <ul class="menu-items">${c.items.map(i => `
-    <li class="menu-item">
-      <div class="menu-item-text"><h3>${esc(i.name)}</h3>${i.description ? `<p>${esc(i.description)}</p>` : ''}</div>
-      ${priceHtml(i.price)}
+    <li class="menu-item${priceOptions(i.price).length > 1 ? ' is-multi' : ''}">
+      <div class="menu-line"><h3>${esc(i.name)}</h3><span class="leader" aria-hidden="true"></span>${priceHtml(i.price)}</div>
+      ${i.description ? `<p>${esc(i.description)}</p>` : ''}
     </li>`).join('')}
   </ul>
-</section>`).join('');
-
-const board = names => `<ul class="board-items">${names.map(findItem).filter(Boolean).map(i => `
-  <li><span class="board-name">${esc(i.name)}</span>${priceHtml(i.price)}</li>`).join('')}</ul>`;
+</section>`;
+}).join('');
 
 const CATEGORY_NOTES = {
-  'Pit sandwiches': 'Pit beef, ham, turkey, sausage and more',
-  'Fries and sides': 'Ocean Fries, potato salad, slaw and beans',
   'Wings and ribs': 'Wings, baby back ribs and half chicken',
-  'Salads and starters': 'Caesar salads, soups and fried starters',
-  'Junior meals': 'Smaller sandwiches, hot dogs and tenders',
+  'Fries and sides': 'Fresh-cut Ocean Fries, potato salad, slaw and beans',
   'Desserts and drinks': 'Fried dough, cheesecake and fresh lemonade',
 };
-const categoryIndex = () => `<ul class="category-index">${menu.categories.map(c => `
-  <li><a href="/menu/#${slug(c.name)}"><span class="ci-name">${esc(c.name)}</span><span class="ci-note">${esc(CATEGORY_NOTES[c.name] || `${c.items.slice(0, 3).map(i => i.name).join(', ')} and more`)}</span>${icon.arrow}</a></li>`).join('')}</ul>`;
+// Home discovery cards: real categories with the matching business photograph.
+const DISCOVERY = [['Wings and ribs', 'wings'], ['Fries and sides', 'fries'], ['Desserts and drinks', 'dessert']];
+const discoveryCards = () => `<ul class="discover-grid">${DISCOVERY.map(([name, art]) => `
+  <li><a class="discover-card" href="/menu/?category=${slug(name)}">
+    ${photo(art, 'discover-photo')}
+    <span class="discover-text"><span class="discover-title">${esc(name)}</span><span class="discover-note">${esc(CATEGORY_NOTES[name])}</span></span>
+  </a></li>`).join('')}
+</ul>`;
 
-const photo = key => {
+const photo = (key, cls = '') => {
   if (!PHOTOS[key]) return '';
   const p = PHOTOS[key];
-  return `<figure class="photo photo-${key}"><img src="${p.src}" width="${p.width}" height="${p.height}" alt="${esc(p.alt)}" loading="${key === 'hero' ? 'eager' : 'lazy'}"${key === 'hero' ? ' fetchpriority="high"' : ''} decoding="async"></figure>`;
+  const eager = key === 'hero';
+  return `<figure class="photo photo-${key}${cls ? ` ${cls}` : ''}"><img src="${p.src}" width="${p.width}" height="${p.height}" alt="${esc(p.alt)}" loading="${eager ? 'eager' : 'lazy'}"${eager ? ' fetchpriority="high"' : ''} decoding="async"></figure>`;
 };
 
 const tokens = current => ({
   header: () => header(current),
   footer,
   hours: () => hoursList('hours'),
-  'menu-nav': menuNav,
+  'menu-filter': menuFilter,
   'menu-sections': menuSections,
   'menu-observed': () => esc(menu.observed),
-  'board': () => board(['Pit beef', 'Pork BBQ', 'Half rack baby back ribs', 'Ocean Fries']),
-  'category-index': categoryIndex,
-  order: () => SITE.order,
+  'discovery-cards': discoveryCards,
+  'order-red': () => orderLink('btn btn-red'),
+  'order-red-lg': () => orderLink('btn btn-red btn-lg'),
+  'order-outline': () => orderLink('btn btn-outline'),
+  'order-link': () => orderLink('text-link', `Order online${icon.arrow}`),
   phone: () => SITE.phone,
   'phone-label': () => SITE.phoneLabel,
   maps: () => SITE.maps,
@@ -176,11 +192,13 @@ const tokens = current => ({
   'icon-arrow': () => icon.arrow,
   'icon-phone': () => icon.phone,
   'icon-pin': () => icon.pin,
-  'icon-bag': () => icon.bag,
-  'photo-hero': () => photo('hero'),
-  'photo-catering': () => photo('catering'),
-  'photo-wings': () => photo('wings'),
-  'photos-on': () => 'has-photos',
+  'icon-plus': () => icon.plus,
+  'photo-hero': () => photo('hero', 'hero-media'),
+  'photo-sandwich': () => photo('sandwich', 'split-media'),
+  'photo-catering-split': () => photo('catering', 'split-media'),
+  'photo-catering': () => photo('catering', 'feature-media'),
+  'photo-wings': () => photo('wings', 'split-media'),
+  'photo-visit': () => photo('hero', 'feature-media feature-media-visit'),
 });
 
 const partials = () => ({

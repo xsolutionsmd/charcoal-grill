@@ -1,0 +1,45 @@
+# Template reconstruction and company fit
+
+Disposition after this analysis: Astra accepted the secondary-heading/menu-heading scale and editorial-image findings below. Corrections reduce headings to the reference range and remove the added inset, subject to the next live Sol recheck. Original measured findings retain their d335271 attribution.
+
+Timing: focused Sol pass completed October 17, 2026, 22:35 EDT, AFTER the structural rebuild was live at `d335271b5860ecfb85a53864be2ea703c5886b95`; not pre-build REA analysis. Earlier reference captures/blueprint were reused.
+Evidence labels: **O** = directly observed here; **R** = earlier supplied capture/verified report; **A** = company adaptation/engineering requirement; **U** = unverified.
+REA status: tools advertised, but passive capture requires a literal-port loopback CDP endpoint; T3 exposed debugging pipes without a compatible endpoint. Bounded recovery inspected the guide and launch flags; no setup changes, REA analysis operation, or Evidence ID. This is browser-only reconstruction.
+References: [Home](https://thehawksmoor.com/), [Air Street menu](https://thehawksmoor.com/locations/airstreet/food/menu/), [Private dining](https://thehawksmoor.com/private-dining/).
+Captures: **R** all three at reported 1440×900 desktop and 390×844 mobile CSS viewports, plus desktop discovery/editorial; **O** all seven retained PNGs visually inspected. Private evidence ledger records originals/hashes, measurements and limitations; no reference assets enter the app.
+
+## Composition to preserve
+
+- **O Home desktop:** ~61px white header, thin accent rule, compact centered wordmark, left navigation, right booking CTA; full-width media, left/bottom copy and paired actions. Hero CSS box is 750px high with a negative top offset: visible lower boundary near y635 at 1440×900. Copy x72/w648; heading 56px, tracking 4px; actions gap16px.
+- **O Home mobile:** ~62px header; hero copy x32/w326 at 390px, heading40px; full-width stacked actions with ~16px gap. **R** utility links wrap into centered ruled rows; do not copy their exact irregular wrapping when four local links fit a clearer grid.
+- **O/R Below hero:** ruled utility navigation; pale editorial introduction within ~1200px desktop width (120px side margins); discovery cards; alternating 50/50 edge-to-edge media/copy bands. Desktop section headings ~30–32px, body usually16–18px; content, rules and image edges establish hierarchy.
+- **R Discovery:** wide image cards with small gutters, dark lower gradient and lower-left labels. **A** use three real-food destination links; do not add unsupported carousel controls or invented promotions.
+- **O Menu desktop:** pale background; centered restaurant/type/menu navigation above white paper, category headings centered, dish names/descriptions left and prices right with restrained dotted leaders. Measured outer content1200px, inner row1136px, paper inset32px; saved capture shows equivalent ~83% viewport paper width.
+- **R Menu mobile:** centered stacked navigation, white paper becomes edge-to-edge, rows retain readable names/prices. **A** compact local category links/select may replace the reference's long multilevel chooser; retain a centered composition, not a sidebar.
+- **O Private dining desktop:** 50/50 opening; left content padding~64px, right full-height video/media, heading48px; enquiry follows editorial copy. **O mobile:** media first (~225px high at390px), then32px content gutters and32px heading. **A** shorten copy to actual catering facts; do not reproduce the reference's long venue-sales page.
+- **O Type/motion:** reference mixes Roman display and serif text with compact navigation; buttons have chamfered ends, filled primary/outlined secondary variants and0.3s CSS transitions; mobile navigation is fixed and transitions0.3s. **A** Marcellus/Manrope only, cream/charcoal/deep green and restrained red from packaging;44px useful targets, visible focus and reduced motion. Never decorative numbering.
+
+## Selected controls, actions and states
+
+- **O Navigation:** menu and group links expose distinct URLs; menu subtype links are real navigation. Clicking Puddings changed the URL to `/locations/airstreet/food/puddings/`; its content was not verified after transition. Mobile hamburger label toggles a fixed sliding menu; immediate Escape check left its checkbox selected. **A** retain Charcoal's accessible close/focus behavior rather than inheriting that limitation.
+- **O Enquiry:** reference CTA targets `#form`; form exposes contact/event fields. Validation, submission, loading, error and success rules **U**; no data entered. **A** replace with `tel:+14106689212`, not an unconnected local form.
+- **A Menu:** all44 sourced entries in static HTML; category selection outputs visible matching sections, active control/status and shareable `/menu/?category=<slug>`; history/refresh restore selection. Unknown slug safely shows full menu. These are company requirements, not reference-observed filtering. No data mutation or custom menu API needed.
+- **R Order:** coordinator verified HTTPS desktop SDK opens the matching menu, Escape closes/restores focus, and mobile hands off externally. **A** replace booking hierarchy with Order online at header/hero/editorial entry points; preserve `https://order.chownow.com/order/5108/locations/6625` and `chownow-order-online` on anchors.
+- **O Documentation:** [ChowNow integration guide](https://get.chownow.com/restaurant-support/how-to-perform-a-basic-integration/) specifies one official ordering-modal script, company ID, overlay behavior and new-page mobile flow. **A** company5108/location6625; exact href remains fallback if SDK fails.
+- **R Provider states:** matching restaurant/menu and scheduled pickup chooser were previously rendered; an earlier after-hours inspection showed unavailable. Availability is time-dependent. Fresh loading/empty/network-error states, cart, validation, checkout/payment success **U**; no order or payment submitted.
+- **A Visit/help:** address/hours, phone and Google directions; in-store gift purchase with external Square balance lookup; native FAQ disclosures. **R** empty Square form/disabled submission seen previously; card validation and balance success **U**. Do not collect local card or personal data.
+
+## Data and integration boundary
+
+- **A Local inputs/outputs:** selected category slug → static section visibility/status/URL history; mobile menu toggle → expanded/closed/focus state; FAQ toggle → native disclosure state. Preserve all-menu no-JavaScript access. No customer records are created locally.
+- **A External inputs/outputs:** company/location IDs and order-link activation → vendor ordering UI; vendor owns availability, cart, identity, payment and order records. Call → phone handler; directions → maps provider; balance link → Square. Hidden vendor/server implementation remains **U**; no proposed local checkout/auth/reservation/newsletter API.
+- **R Company:** Charcoal Grill,8535 Old Harford Road, Parkville MD21234;410-668-9212. Monday closed; Tue–Sat11am–8pm, Sun11am–7pm. Preserve separately sourced catering details and48-hour lead information. No founding history, private rooms, awards or reference restaurant claims.
+- **A Assets:** `/assets/pit-beef-meal.jpg`1203×609 → full-width Home hero with directional dark overlay; retain sandwich/packaging and avoid excessive mobile magnification. Sandwich942×890 → menu/editorial; wings1283×1600 → About/discovery; salads1920×1282 → Catering; dough1920×1179 → dessert/discovery. Use approved business photos only.
+- **A One-location mapping:** Home/Menu/Catering/About/Visit stay separate URLs. Remove multi-restaurant/country selection; substitute one useful Visit destination. Booking → verified ChowNow handoff; group enquiry → actual catering call; seasonal/shop/newsletter content → actual menu, gift balance and practical help. These are justified company adjustments.
+
+## Bounded remaining fidelity findings for Astra
+
+- **O** Live version matched `d335271b5860ecfb85a53864be2ea703c5886b95`; sampled Home/Menu geometry only, not the independent all-page audit. Full-width hero, compact header and 1080px centered menu paper are present; retain the rebuild.
+- **O** Home secondary headings measure41.6px/47.84px line versus reference~30–32px/36px: reduce secondary scale if closer fidelity remains the goal, retaining the selected font families. Hero60px versus56px is a smaller adjustment.
+- **O** Home “Our menu” image uses `contain` with56px padding in a720×605px half-column; reference editorial media fills its half edge-to-edge. Prefer a full-bleed crop preserving the complete food subject, or explicitly retain the inset for asset composition rather than call it an exact match.
+- **O/A** Menu paper1080px is within the prior1000–1120px adaptation target; category heading37.6px versus reference32px is residual scale drift. Query/history filtering is intentional functional adaptation, not a defect. No new design cycle, transaction testing or frontend changes were performed.

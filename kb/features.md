@@ -1,10 +1,16 @@
 # Features
 Build type: landing, static multipage restaurant site with external integrations.
 Routes: /, /menu/, /catering/, /about/, /visit/. All primary navigation opens separate URLs.
-Integrate: official ChowNow restaurant/location link, real phone, Google Maps directions, official contact/employment destination, Square gift-card balance check. Gift cards purchased in-store. These are outbound integrations, not locally implemented transaction flows.
+Integrate: official ChowNow ordering overlay on desktop and provider ordering page on mobile, with the real restaurant/location href as fallback; real phone, Google Maps directions, official contact/employment destination, Square gift-card balance check. Gift cards purchased in-store. The provider owns transaction flows.
 Build: no transactional backend, cart, reservation system, email form or account system.
 Acceptance: each page direct-loads and refreshes; nav, active state, mobile menu and back/forward work; phone/maps/gift links match official sources; desktop/mobile have no obvious overflow, broken images or awkward card controls. Noindex everywhere on this host.
 
 The scope above was selected before the corrective reference search. Component-to-reference evidence is in the design brief. The reference does not introduce additional functionality. All five selected real business images are used on the actual pages.
+
+Structural correction: menu categories now use shareable /menu/?category=<slug> links and browser history, adapting the reference's selected-menu navigation. Full menu remains the default and the no-JavaScript fallback. Primary pages remain distinct URLs. Mobile menu is an overlay with keyboard focus containment and Escape/selection closure. Native FAQ disclosures answer only sourced business questions.
+
+ChowNow follows the vendor's official ordering-modal script, company ID 5108 and location 6625, installed once per page. All Order online links retain the real provider href and the vendor integration class. Match the reference's persistent booking-action hierarchy with this actual ordering action; do not add reservations. New live inspection loaded Charcoal Grill's menu and next-day scheduled pickup chooser. This supersedes the earlier observed unavailable state as a description of the current inspection. Provider prices/options remain authoritative in its interface; no data submission or completed order is part of testing.
+
+Required correction checks: category links and active selection agree; selected category survives refresh/direct load; back/forward restore selection; unknown categories show the full menu safely. All 44 published items remain in source. ChowNow desktop overlay opens the matching store and closes back to the site; mobile order path reaches the matching provider. Check keyboard focus and no overlay stacking with the mobile menu. No claimed checkout/payment pass without an authorized completed transaction.
 
 Integration observation, October 17, 2026: ChowNow displayed the matching Parkville location, address, phone and pickup hours. At approximately 8:45pm EDT, after its published pickup hours, it displayed online ordering unavailable. This establishes the destination and visible fallback state, not a working checkout or a permanent outage. The Menu page explicitly supports calling when online ordering is unavailable. Square rendered the matching Charcoal Grill balance form with card number, PIN, no-PIN option and disabled empty-state submission. No card data, order, payment or inquiry was submitted.

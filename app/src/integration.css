@@ -1,0 +1,5 @@
+/* Functional visibility must win over a layout's display declaration. */
+[data-menu-category][hidden] { display: none !important; }
+
+/* The provider's close control keeps its own appearance with visible focus. */
+.chownow-close:focus-visible { outline: 3px solid #fff; outline-offset: 4px; }

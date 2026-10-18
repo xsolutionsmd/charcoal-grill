@@ -7,3 +7,4 @@ Observed 2026-10-17.
 - [S5] https://www.baltimoremagazine.com/section/fooddrink/baltimores-best-barbecue-joints/ ? July 2, 2025 listing independently identifies Charcoal Grill at 8535 Old Harford Road; historical coverage of pit beef, ham, turkey, pulled chicken and ribs.
 - [S6] https://squareup.com/gift/9K1R5WDH8FYKR/check-balance ? official-site linked gift-card balance destination; no purchase flow promised.
 - [S7] https://ordering.chownow.com/order/5108/locations?add_cn_ordering_class=true ? linked by image buttons throughout the official menu.
+- [S8] https://get.chownow.com/restaurant-support/how-to-perform-a-basic-integration/ — official single-script ordering overlay integration, company-ID attribute, anchor class and mobile provider-page behavior.

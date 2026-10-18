@@ -6,38 +6,36 @@
     <meta name="robots" content="noindex, nofollow">
     <title>Menu · Charcoal Grill</title>
     <meta name="description" content="Pit sandwiches, Ocean Fries, wings, ribs, salads, junior meals, desserts and drinks at Charcoal Grill in Parkville, MD.">
-    <meta name="theme-color" content="#171513">
+    <meta name="theme-color" content="#f7f3ea">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Manrope:wght@400;500;600;700&display=swap">
     <script type="module" src="/src/main.js"></script>
   </head>
-  <body class="{{photos-on}}">
+  <body class="page-pale">
     {{header}}
     <main id="main">
-      <section class="page-hero" aria-labelledby="page-title">
-        <div class="wrap page-hero-grid">
-          <h1 id="page-title" class="display reveal">The <span class="accent">menu</span></h1>
-          <div class="page-hero-copy reveal reveal-late">
-            <p class="lede">Prices from our published menu. Order through ChowNow when available, or call the restaurant to order and confirm availability.</p>
-            <div class="actions">
-              <a class="btn btn-red" href="{{order}}">{{icon-bag}}Order online</a>
-              <a class="btn btn-line" href="{{phone}}">{{icon-phone}}Call {{phone-label}}</a>
-            </div>
+      <header class="menu-head">
+        <div class="wrap">
+          <h1 id="page-title" class="page-title">Menu</h1>
+          <p class="menu-intro">Prices from our published menu. Order online when available, or call the restaurant to order and confirm availability.</p>
+          <div class="actions actions-center">
+            {{order-red}}
+            <a class="btn btn-outline" href="{{phone}}">{{icon-phone}}Call {{phone-label}}</a>
           </div>
+          <nav class="menu-filter" aria-label="Menu categories">
+            {{menu-filter}}
+          </nav>
+          <p class="sr-only" data-menu-status aria-live="polite"></p>
         </div>
-      </section>
+      </header>
 
-      <nav class="menu-nav" aria-label="Menu sections">
-        <div class="wrap">{{menu-nav}}</div>
-      </nav>
-
-      <div class="wrap menu-body">
+      <div class="menu-paper">
         {{menu-sections}}
-        <aside class="menu-foot">
+        <aside class="menu-foot" aria-label="Menu notes">
           <p><strong>Allergy note:</strong> Ocean Fries are cooked in peanut oil.</p>
-          <p class="muted">For catering menus and party platters, see <a href="/catering/">catering</a>.</p>
+          <p>For party platters and catering menus, see <a href="/catering/">catering</a>.</p>
         </aside>
       </div>
     </main>
