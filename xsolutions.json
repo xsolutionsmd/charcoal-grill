@@ -86,18 +86,19 @@
     },
     "build": {
       "status": "done",
-      "recorded": "2026-10-18T00:05:25.067053+00:00",
+      "recorded": "2026-10-18T00:08:22.305073+00:00",
       "evidence": [
-        "Initial Claude frontend; Astra reference-driven correction after user typography rejection and Sol live review. Vite check passes; desktop home and 360px Visit render/containment verified; live release validation tracked privately."
+        "Initial Claude frontend; Astra reference-driven correction after user typography rejection and Sol live review. Vite check passes; desktop home and 360px Visit render/containment verified; live release validation tracked privately.",
+        "Astra template fit explicitly maps sourced business facts, five actual reference photos/rights and static integration scope; b62f996 rendered bundle unchanged by this evidence-only update. Build checks and targeted visuals passed."
       ],
       "inputs_sha256": {
         "kb/features.md": "61ab19684b758b96983c0939afe862ccdfe72af8b1f5058afc7c28ed63027c23",
-        "kb/design-brief.md": "d071a949581911f4299240e2e76765de1aaf1ef80c4100321111443c980c4e44"
+        "kb/design-brief.md": "079d16243380bf9592ab20b54450f04987bce8ed6d87cd5aa35c809bb004d008"
       }
     },
     "deploy": {
       "status": "pending"
     }
   },
-  "updated": "2026-10-18T00:05:25.068230+00:00"
+  "updated": "2026-10-18T00:08:22.306382+00:00"
 }
