@@ -1,5 +1,7 @@
 // Official ChowNow integration. The provider owns availability, basket/checkout.
 // https://get.chownow.com/restaurant-support/how-to-perform-a-basic-integration/
+import { openMobileOrdering } from './mobile-ordering.js';
+
 const orderLinks = [...document.querySelectorAll('a.chownow-order-online')];
 if (orderLinks.length && !document.querySelector('script[data-chownow-company-id]')) {
   const hrefs = new Map(orderLinks.map(link => [link, link.getAttribute('href')]));
@@ -14,10 +16,25 @@ if (orderLinks.length && !document.querySelector('script[data-chownow-company-id
 
   orderLinks.forEach(link => {
     link.addEventListener('click', event => {
-      if (typeof window.ChowNow?.orderOnline !== 'function') return;
+      const modified = event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey;
+      const mobile = phone.matches || /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+      if (mobile) {
+        link.setAttribute('href', hrefs.get(link));
+        event.stopImmediatePropagation();
+        if (!modified && openMobileOrdering(link)) event.preventDefault();
+        return;
+      }
+      // ChowNow can expose a no-op orderOnline
+      // function on unsupported browsers (including Chrome on iOS), so function
+      // presence alone does not mean the overlay was initialized.
+      if (typeof window.ChowNow?.orderOnline !== 'function' || !document.querySelector('.chownow-container')) {
+        link.setAttribute('href', hrefs.get(link));
+        event.stopImmediatePropagation();
+        return;
+      }
       // The vendor removes hrefs; restore link semantics while allowing its
       // click handler to open the provider. Modified clicks stay normal links.
-      if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) {
+      if (modified) {
         event.stopImmediatePropagation();
         return;
       }

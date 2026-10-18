@@ -1,5 +1,27 @@
 # Validation
 
+## Requested mobile popup - October 18, 2026
+
+The owner chose a popup on Derek's preview. This supersedes the native-link-only candidate below. The custom native dialog embeds the existing ChowNow restaurant, preserving the provider's menu/cart/checkout ownership. The official [integration documentation](https://get.chownow.com/restaurant-support/how-to-perform-a-basic-integration/) explicitly sends phones to a new page, so the mobile dialog is a site wrapper, not an official mobile-widget capability. Desktop still uses the official widget.
+
+Local Chromium checks on the actual Vite application passed: mobile header/hero open, real provider pickup selector/menu, menu scrolling, item required-option validation, Regular Turkey/No Bread added to synthetic cart, checkout review reached without entering customer/payment data or submitting an order; the test item was removed afterward. Close and host Escape restore opener focus/body overflow. Reopening retains the provider frame. Host dialog and header controls fit 390x844 and 320x700; synthetic iPhone Chrome identity opens the dialog at 844x390. The provider's own 320px item action row is cramped, while the site's controls fit. Cross-origin provider layout/keyboard events remain provider-owned.
+
+`npm run check` passes (39 files). The exact ChowNow origin is explicitly allowed in `xs-check.json` for the provider initialization postMessage. No physical iPhone/WebKit, real payment, wallet or completed transaction acceptance is claimed. Hosted CI, exact-version HTTPS checks and live mobile/desktop acceptance are required before claiming the preview deployed; their final receipt is kept in the private business checkpoint, avoiding a documentation-only re-release.
+
+## Mobile ordering regression - October 18, 2026 (local, unpublished)
+
+Baseline production `/version.json`: `ab953abb50c21be7e74325c53ee6745ba19e5708`. Inspected live provider script `https://cf.chownowcdn.com/latest/static/integrations/ordering-modal.min.js`, version 2.3.0. Its browser support check matches iOS Chrome's Safari token but requires Version/, returns false and installs `function(){}` as `ChowNow.orderOnline`. The previous site capture handler then prevents default navigation although there is no provider click handler/container.
+
+Browser regression used isolated same-origin iframe documents, the actual original/fixed site source and live provider script. iOS identity was explicitly overridden to `Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/130.0.6723.90 Mobile/15E148 Safari/604.1`; this is a synthetic identity in Chromium, not physical WebKit testing.
+
+- Original, 390px: empty provider function, no container, click default prevented, no popup. Reproduces the reported dead button.
+- Fixed, 390px: same empty provider function, native click not prevented, correct restaurant href retained.
+- Fixed, 844px landscape: same unsupported provider, native click not prevented, correct restaurant href retained.
+- Fixed, 1280px desktop Chrome: initialized provider container, click default prevented as intended, ordering overlay becomes visible.
+- `npm run check`: PASS, Vite production build and content/resource checks (39 built files). Shared integration is imported by the multipage main entry.
+
+The fix restores hrefs and bypasses vendor event interception for phone widths or uninitialized integrations. Supported desktop overlay behavior is retained. No published environment was modified, no physical iPhone test or checkout/payment acceptance is claimed. Next validation: deployed preview and actual iPhone, followed by authorized production promotion.
+
 ## Combined production release - October 18, 2026
 
 The owner authorized moving both personal branches to production. This supersedes the preview-only restrictions in the historical records below. Derek's 32-of-44 menu-photo update was released in production revision `782731bcea502273e59f6b872ae8e63059772ffd` through PR 4; exact-revision five-route, 33-asset, health, noindex and 404 checks passed.

@@ -1,5 +1,21 @@
 # Handoff
 
+## Mobile ordering popup - October 18, 2026
+
+The owner requested a mobile popup on Derek's preview, superseding the initial native-link-only repair below. `app/src/mobile-ordering.js` opens the existing restaurant's ChowNow page in a native full-screen dialog at phone widths and for iPhone/iPad/Android identities, including landscape. Close and the direct new-tab fallback stay visible; the iframe is reused across close/reopen. Supported desktop browsers retain the official overlay. Unsupported dialog browsers retain the real ordering link.
+
+Local build/content and public-source checks pass. Local browser checks cover pickup selection, menu scrolling, item options and required-option validation, a synthetic cart and checkout review (no customer/payment entry or order submission), Close/Escape/focus return, 390px and 320px host containment, and 844px synthetic iPhone identity routing. Actual iOS/WebKit/payment acceptance remains unverified. ChowNow's own 320px item-action row is cramped; our header controls remain contained. See `docs/VALIDATION.md` and `docs/API.md`.
+
+Authorized destination: `derek-dev` and https://d-charcoalgrill.xsolutionsmd.com/. Publication is through the existing branch push workflow; verify Actions and live `/version.json` for the final candidate. Production and Abdul remain outside this change. Private preview receipt: `../private/updates/mobile-ordering-20261018/HANDOFF.md` in the business workspace. No local Docker resources were created; stop the temporary Vite server and remove disposable test state after verification.
+
+## Initial mobile diagnosis and native-link proposal - superseded by popup above
+
+Derek reported that all Order Online buttons do nothing in his iPhone browser. Production is still `ab953abb50c21be7e74325c53ee6745ba19e5708`. ChowNow integration script 2.3.0 rejects an iPhone Chrome user agent (CriOS/Safari without Version/) and exposes an empty `orderOnline` function. Our capture listener incorrectly treated that function as readiness and prevented native navigation. All ordering buttons share this listener.
+
+Local `derek-dev` fix in `app/src/chownow.js`: keep native links on phone widths and whenever the provider has not initialized its container; restore the known href and stop the vendor handler without cancelling the link. Supported desktop overlay behavior remains. Build/content checks and browser regression checks pass; details in `docs/VALIDATION.md`. No push or deployment performed; production and both hosted previews remain unchanged. Next: preview/release this bounded fix under the repository release policy, then verify on Derek's actual iPhone. Earlier resized desktop checks did not cover iOS browser identity.
+
+No Docker resources were created. Existing dependencies and the regenerated ignored `app/dist` build remain for the pending fix/release; recheck the build output after release. Temporary browser test frames and task tabs were removed; no customer order or payment was submitted.
+
 ## Combined production release - October 18, 2026
 
 The owner authorized moving both personal branches to production. This supersedes the preview-only restrictions in the historical records below. Derek's 32-of-44 menu-photo update was released in production revision `782731bcea502273e59f6b872ae8e63059772ffd` through PR 4; exact-revision five-route, 33-asset, health, noindex and 404 checks passed.
