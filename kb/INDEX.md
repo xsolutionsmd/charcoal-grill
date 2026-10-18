@@ -13,6 +13,8 @@ Each claim cites an entry in [sources](sources.md) as `[S#]` with its observatio
 | [Reviews and reputation](reviews-and-reputation.md) | Third-party review themes and attributable excerpts |
 | [Features](features.md) | Build type, selected features, integrations, owner needs |
 | [Design brief](design-brief.md) | Visitor job, primary action, accepted direction, standing design rules |
+| [Template blueprint](template-blueprint.md) | Observed reference structure, behavior and company adaptations |
+| [Runtime contract](../docs/API.md) | Static routes, menu state and provider integration boundaries |
 | [Media](media.md) | Generated media-library summary and what is used on the site |
 | [Sources](sources.md) | Every source consulted, with URL, date and what it supported |
 | [Open questions](open-questions.md) | Conflicts, unknowns and what to ask the owner |

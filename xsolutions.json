@@ -90,23 +90,24 @@
     },
     "build": {
       "status": "done",
-      "recorded": "2026-10-18T02:38:14.704841+00:00",
+      "recorded": "2026-10-18T02:50:22.873540+00:00",
       "evidence": [
         "Initial Claude frontend; Astra reference-driven correction after user typography rejection and Sol live review. Vite check passes; desktop home and 360px Visit render/containment verified; live release validation tracked privately.",
         "Astra template fit explicitly maps sourced business facts, five actual reference photos/rights and static integration scope; b62f996 rendered bundle unchanged by this evidence-only update. Build checks and targeted visuals passed.",
         "All five collected photos included as local assets using the existing inspected Hawksmoor reference. Build/source checks pass; desktop/mobile hero, menu photos, catering and About composition inspected with zero overflow. Previous Sol fixes retained.",
         "All five business photos rendered; build/source checks pass; desktop/mobile reference comparison and image crops checked. Existing Sol fixes retained; exact external provider states recorded with phone fallback.",
         "Claude implemented close Hawksmoor structural blueprint using all five business photos; Astra added menu category URL/history and official ChowNow integration. Local Vite/source checks and initial desktop/mobile checks pass. Live HTTPS integration and fresh Sol review pending before production promotion.",
-        "Sol live all-page desktop/mobile review of d335271 passed with optional refinements. Astra corrected mobile hero crop/menu opening and reference-fit heading/image details; local production/source checks and targeted rendered checks pass. Browser-only reconstruction/REA transport gap and integration contract recorded; targeted live Sol recheck pending."
+        "Sol live all-page desktop/mobile review of d335271 passed with optional refinements. Astra corrected mobile hero crop/menu opening and reference-fit heading/image details; local production/source checks and targeted rendered checks pass. Browser-only reconstruction/REA transport gap and integration contract recorded; targeted live Sol recheck pending.",
+        "Sol review4 verified live e060d69 corrections and applicable customer interactions at desktop/mobile/narrow widths, with no remaining actionable site issue. All44 menu entries and five photos retained. Provider/device/REA limitations recorded. Final source change is documentation/status only; runtime code remains the reviewed version."
       ],
       "inputs_sha256": {
         "kb/features.md": "2c03d84827b99bf96510675042ef55667fe0f8d0fff75dd53b99ee79ed1ed2fc",
-        "kb/design-brief.md": "a767661218ae25247bc0d57febe5ef3d0ec59a78be87d4d7109515ef5eae245e"
+        "kb/design-brief.md": "0780c9be5f59c662f42c472bebd707bd368f74778d3a5895ec290646904a0b7b"
       }
     },
     "deploy": {
       "status": "pending"
     }
   },
-  "updated": "2026-10-18T02:38:14.714685+00:00"
+  "updated": "2026-10-18T02:50:22.890921+00:00"
 }
