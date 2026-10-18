@@ -194,7 +194,7 @@ const tokens = current => ({
   'icon-pin': () => icon.pin,
   'icon-plus': () => icon.plus,
   'photo-hero': () => photo('hero', 'hero-media'),
-  'photo-sandwich': () => photo('sandwich', 'split-media split-media-contain'),
+  'photo-sandwich': () => photo('sandwich', 'split-media'),
   'photo-catering-split': () => photo('catering', 'split-media'),
   'photo-catering': () => photo('catering', 'feature-media'),
   'photo-wings': () => photo('wings', 'split-media'),
