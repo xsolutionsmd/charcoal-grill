@@ -2,6 +2,8 @@
 
 ## Clean header logo — October 18, 2026
 
+Superseding correction: the original **It still tastes so good!** tagline must remain. A second built-in image edit restored the green italic tagline beneath Grill while keeping the anniversary block absent. Current asset: app/public/assets/charcoal-grill-logo-tagline.png (1882 × 836 RGBA), used by header and browser-tab declarations. The earlier tagline-free asset is superseded; its source and edit history remain in Git/private provenance. Do not remove the tagline in future refinements.
+
 Source: the logo displayed on https://www.chargrill.com/; original asset https://irp.cdn-website.com/d0951e0a/dms3rep/multi/opt/35th+Anniversary+Logo+Version+2+Color+Outlines-356w.png .
 
 At Abdul's request, the built-in image editor removed the 35/YEARS/Est.1990 anniversary block and small anniversary tagline, retained the green Charcoal and red Grill lettering, and centered the script below the name on transparency. This is an edited derivative of the business logo. File: app/public/assets/charcoal-grill-logo.png (1882 × 836 RGBA). Used in the shared header on abdul-dev; source/provenance and exact edit prompt are retained in the private update record. Standing business-asset permission applies.

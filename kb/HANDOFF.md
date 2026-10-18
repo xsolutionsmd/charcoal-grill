@@ -2,6 +2,8 @@
 
 ## Header logo update — October 18, 2026
 
+Latest correction: retain the original tagline **It still tastes so good!**. The earlier omission was not requested. The replacement transparent logo now includes it beneath Grill, and the header and all browser-tab icons use the new tagline asset. Desktop/mobile headers are 80/74px tall to give the complete mark room. Keep the anniversary 35/YEARS/Est.1990 removed. This supersedes the earlier tagline-removal choice below; same abdul-dev-only scope.
+
 Abdul requested the official website logo in place of the centered header text, without the 35th-anniversary element. The shared header now uses a transparent, cleaned green/red logo on all pages, with responsive dimensions, an accessible home link and restrained hover fade. Source and transformation are recorded in media.md. The accepted page layout and menu content are preserved.
 
 Scope: abdul-dev and its preview only. Header release 658a1a1 passed both hosted workflows and independent live review at desktop/mobile/narrow widths, including home navigation, mobile menu/focus, sticky header and smooth hover. No findings remained.

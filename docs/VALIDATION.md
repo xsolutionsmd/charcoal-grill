@@ -2,6 +2,8 @@
 
 ## Header logo — October 18, 2026
 
+Tagline correction: updated image inspected for exact wording It still tastes so good!, transparent background and absent anniversary section. Local 1280px/320px views checked with the 80/74px header, updated icon resource and retained mobile controls. New hosted revision and independent recheck are pending publication.
+
 Header-only release 658a1a1 passed hosted Application CI and Oracle preview release plus independent live review at 1440, 390, 360 and 320px. Home-link keyboard navigation, mobile menu open/close/Escape/focus wrapping, sticky placement and hover transition passed with no findings. The follow-up replaces all six favicon links with the same cleaned PNG; hosted favicon verification follows publication.
 
 Local Vite build/content checks pass. Rendered header checked at 1280 × 800 and 360 × 800: loaded transparent logo, correct centered desktop placement, contained mobile logo/order/menu controls and no horizontal overflow. Mobile disclosure opens, Escape closes it and restores toggle focus. Explicit image dimensions reserve space; existing reduced-motion CSS covers the opacity transition. Runtime reduced-motion emulation is not claimed. Hosted release and independent review results follow in the update handoff.
