@@ -1,5 +1,12 @@
 # Handoff
 
+## Mobile ordering: direct links - October 18, 2026
+
+The physical iPhone test of the popup experiment failed: ChowNow displayed its blocked-cookie embedded-page fallback and required a new tab. The owner then approved direct links for mobile only. Mobile ordering now follows the existing restaurant URL immediately, including iPhone/Android landscape, without a host dialog. The unused dialog module, styles and postMessage resource exception are removed. Desktop retains the official popup and its accessibility enhancements. The historical experiment below is superseded.
+
+Validation for the final revision and deployment to Derek's preview is recorded in the private release checkpoint. Production and Abdul remain outside this change.
+
+
 ## Mobile ordering popup - October 18, 2026
 
 The owner requested a mobile popup on Derek's preview, superseding the initial native-link-only repair below. `app/src/mobile-ordering.js` opens the existing restaurant's ChowNow page in a native full-screen dialog at phone widths and for iPhone/iPad/Android identities, including landscape. Close and the direct new-tab fallback stay visible; the iframe is reused across close/reopen. Supported desktop browsers retain the official overlay. Unsupported dialog browsers retain the real ordering link.

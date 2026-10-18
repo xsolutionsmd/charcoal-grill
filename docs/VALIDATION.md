@@ -1,5 +1,12 @@
 # Validation
 
+## Mobile direct-link correction - October 18, 2026
+
+The physical iPhone test of the popup experiment failed: ChowNow displayed its blocked-cookie embedded-page fallback and required a new tab. The owner then approved direct links for mobile only. Mobile ordering now follows the existing restaurant URL immediately, including iPhone/Android landscape, without a host dialog. The unused dialog module, styles and postMessage resource exception are removed. Desktop retains the official popup and its accessibility enhancements. The historical experiment below is superseded.
+
+Validation for the final revision and deployment to Derek's preview is recorded in the private release checkpoint. Production and Abdul remain outside this change.
+
+
 ## Requested mobile popup - October 18, 2026
 
 The owner chose a popup on Derek's preview. This supersedes the native-link-only candidate below. The custom native dialog embeds the existing ChowNow restaurant, preserving the provider's menu/cart/checkout ownership. The official [integration documentation](https://get.chownow.com/restaurant-support/how-to-perform-a-basic-integration/) explicitly sends phones to a new page, so the mobile dialog is a site wrapper, not an official mobile-widget capability. Desktop still uses the official widget.

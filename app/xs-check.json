@@ -1,6 +1,5 @@
 {
   "allowedExternalResources": [
-    "https://order.chownow.com",
     "https://cf.chownowcdn.com/latest/static/integrations/ordering-modal.min.js",
     "https://fonts.googleapis.com",
     "https://fonts.googleapis.com/",
