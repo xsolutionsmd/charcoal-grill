@@ -392,7 +392,7 @@ address { font-style: normal; }
   .how-item + .how-item { border-top: 1px solid var(--rule-light); }
   .footer-grid { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
   .menu-item { grid-template-columns: minmax(0, 1fr); }
-  .menu-item .prices { justify-content: flex-start; text-align: left; margin-top: .35rem; }
+  .menu-item .prices { justify-content: flex-start; text-align: left; margin-top: .35rem; column-gap: 1.5rem; }
   .board-items li { grid-template-columns: minmax(0, 1fr); gap: .35rem; }
   .board .prices { justify-content: start; justify-items: start; }
   .board .price:only-child { grid-column: 1; }
